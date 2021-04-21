@@ -292,202 +292,118 @@ header {
   cursor: pointer;
 }
 
-#banner {
+#kawahvillas-contact-header {
   background-color: var(--support);
 }
 
-#banner .content {
-  grid-column: 2 / span 10;
-  align-items: stretch;
-  justify-content: flex-end;
-  padding: 0 5.5em 5.5em 2em;
-  min-height: 125vmin;
-  background-image: url("../img/img_3.jpg");
-  background-repeat: no-repeat;
-  background-position: 40% 50%;
-  background-size: cover;
-  box-shadow: inset 0 -20em 10em -10em var(--secondary);
-}
-
-#kawahvillas-access {
-  grid-template-rows: auto;
-  background-color: var(--support);
-}
-
-#kawahvillas-access .line-border {
+#kawahvillas-contact-header h1 {
   grid-column: 3 / span 8;
   grid-row: 1 / 2;
-  border-bottom: 1px solid var(--primary);
-  margin: 0 0 2em 0;
-  width: 6em;
+  font-size: 3.5em;
 }
 
-#kawahvillas-access h2 {
+#kawahvillas-contact-header p {
   grid-column: 3 / span 8;
   grid-row: 2 / 3;
+  font-size: 2em;
 }
 
-#kawahvillas-access .image-with-text {
-  grid-column: 3 / span 8;
-  grid-row: 3 / 4;
+#kawahvillas-contact-help {
+  background-color: var(--support);
 }
 
-#kawahvillas-access p {
-  grid-column: 3 / span 8;
-  grid-row: 4 / 5;
-}
-
-#kawahvillas-trip {
+#kawahvillas-contact-help .grid {
   grid-template-rows: auto;
-  background-color: var(--support);
-}
-
-#kawahvillas-trip .line-border {
-  grid-column: 3 / span 8;
-  grid-row: 1 / 2;
-  border-bottom: 1px solid var(--primary);
-  margin: 0 0 2em 0;
-  width: 6em;
-}
-
-#kawahvillas-trip h2 {
-  grid-column: 3 / span 8;
-  grid-row: 2 / 3;
-}
-
-#kawahvillas-trip .image-with-text {
-  grid-column: 3 / span 8;
-  grid-row: 3 / 4;
-}
-
-#kawahvillas-trip p {
-  grid-column: 3 / span 8;
-  grid-row: 4 / 5;
-}
-
-#kawahvillas-guest {
-  grid-template-rows: auto;
-  background-color: var(--support);
-}
-
-#kawahvillas-guest .line-border {
-  grid-column: 3 / span 8;
-  grid-row: 1 / 2;
-  border-bottom: 1px solid var(--primary);
-  margin: 0 0 2em 0;
-  width: 6em;
-}
-
-#kawahvillas-guest h2 {
-  grid-column: 3 / span 8;
-  grid-row: 2 / 3;
-}
-
-#kawahvillas-guest .image-with-text {
-  grid-column: 3 / span 8;
-  grid-row: 3 / 4;
-}
-
-#kawahvillas-guest p {
-  grid-column: 3 / span 8;
-  grid-row: 4 / 5;
-}
-
-#kawahvillas-nocontract {
-  grid-template-rows: auto;
-  background-color: var(--support);
-}
-
-#kawahvillas-nocontract .line-border {
-  grid-column: 3 / span 8;
-  grid-row: 1 / 2;
-  border-bottom: 1px solid var(--primary);
-  margin: 0 0 2em 0;
-  width: 6em;
-}
-
-#kawahvillas-nocontract h2 {
-  grid-column: 3 / span 8;
-  grid-row: 2 / 3;
-}
-
-#kawahvillas-nocontract .image-with-text {
-  grid-column: 3 / span 8;
-  grid-row: 3 / 4;
-}
-
-#kawahvillas-nocontract p {
-  grid-column: 3 / span 8;
-  grid-row: 4 / 5;
-}
-
-#kawahvillas-subscription {
-  background-color: var(--support);
-}
-
-#kawahvillas-subscription .content {
-  grid-column: 3 / span 8;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
-#kawahvillas-subscription .content img {
-  width: 75px;
+#kawahvillas-contact-help i {
+  font-size: 8em;
 }
 
-#kawahvillas-subscription .content h2 {
-  padding: 1em 0;
+#kawahvillas-contact-help i.fa-phone-volume {  
+  transform: rotate(-45deg);
 }
 
-#kawahvillas-duo-membership {
-  background-image: url("../img/img_29.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 5em 0;
-}
-
-#kawahvillas-duo-membership .card-duo-membership {
+#kawahvillas-contact-help h2 {
   grid-column: 3 / span 8;
-  background-color: var(--support);
-  margin: 2em 0;
+  grid-row: 1 / 2;
+  text-align: center;
+}
+
+#kawahvillas-contact-help .card-help {
+  background-color: var(--secondary);
+  margin: 3em 0;
   padding: 1em 2em 3em 2em;
-  text-align: center;
+  min-height: 75vmin;
+  border-radius: 2em;
 }
 
-#kawahvillas-duo-membership .card-duo-membership h3 {
-  padding: 1em 0;
+#kawahvillas-contact-help .card-help h5 {
+  padding: 1.5rem;
 }
 
-#kawahvillas-duo-membership .card-duo-membership .price {
-  align-items: flex-end;
-  justify-content: center;
-  padding: 1em 0 3em 0;
-}
-
-#kawahvillas-duo-membership .card-duo-membership h4 {
-  font-size: 4em;
-  font-weight: 300;
-}
-
-#kawahvillas-duo-membership .card-duo-membership span {
+#kawahvillas-contact-help .card-help span {
   font-size: 1.2em;
-  padding-bottom: 0.2em;
+  margin: auto auto 0 auto;
 }
 
-#kawahvillas-duo-membership .card-duo-membership a {
-  margin: 1em auto;
+#kawahvillas-contact-help #card-help-1 {
+  grid-column: 3 / span 8;
+  grid-row: 2 / 3;
 }
 
-#kawahvillas-live {
+#kawahvillas-contact-help #card-help-2 {
+  grid-column: 3 / span 8;
+  grid-row: 3 / 4;
+}
+
+#kawahvillas-contact-help #card-help-3 {
+  grid-column: 3 / span 8;
+  grid-row: 4 / 5;
+}
+
+#kawahvillas-contact-form {
   background-color: var(--support);
 }
 
-#kawahvillas-live .content {
+#kawahvillas-contact-form h2 {
   grid-column: 2 / span 10;
-  align-items: center;
-  justify-content: center;
+  grid-row: 1 / 2;
+  padding: 2em 0;
   text-align: center;
+}
+
+#kawahvillas-contact-form input {
+  border: 1px solid var(--secondary);
+  margin: 0.5em 0;
+  padding: 1em;
+}
+
+#kawahvillas-contact-form .contact-name {
+  grid-column: 2 / span 10;
+  grid-row: 2 / 3;
+}
+
+#kawahvillas-contact-form .contact-email {
+  grid-column: 2 / span 10;
+  grid-row: 3 / 4;
+}
+
+#kawahvillas-contact-form .contact-message {
+  grid-column: 2 / span 10;
+  grid-row: 4 / 5;
+}
+
+#kawahvillas-contact-form .button {
+  grid-column: 2 / span 10;
+  grid-row: 5 / 6;
+  padding: 1em 3em;
+  margin: 1em auto;
+  border: 2px solid var(--primary);
+  cursor: pointer;
 }
 
 footer {
@@ -567,8 +483,8 @@ footer {
 #footer-area .line-border {
   grid-column: 3 / span 8;
   grid-row: 2 / 3;
-  border-top: 1px solid var(--primary);
-  margin: 0 0 4em 0; 
+  border-bottom: 1px solid var(--primary);
+  margin: 0 0 4em 0;
   width: 100%;
 }
 
@@ -626,126 +542,65 @@ footer {
     padding: 0.5em 1em;
   }
   
-  #banner .content {
+  #kawahvillas-contact-header h1 {
+    grid-column: 25 / span 66;
+    grid-row: 1 / 2;
+  }
+  
+  #kawahvillas-contact-header p {
+    grid-column: 25 / span 66;
+    grid-row: 2 / 3;
+  }
+
+  #kawahvillas-contact-help h2 {
     grid-column: 13 / span 156;
-    align-items: center;
-    justify-content: center;
-    padding: 0;    
-    min-height: 90vmin;
-    box-shadow: none;
+    text-align: center;
+  }
+
+  #kawahvillas-contact-help .card-help {
+    min-height: 50vmin;
   }
   
-  #kawahvillas-access .image-with-text {
-    grid-area: 1 / 25 / span 3 / span 62;
-    min-height: 100%;
+  #kawahvillas-contact-help #card-help-1 {
+    grid-column: 25 / span 40;
+    grid-row: 2 / 3;
   }
   
-  #kawahvillas-access .line-border {
-    grid-column: 95 / span 62;
-    grid-row: 1 / 2;
+  #kawahvillas-contact-help #card-help-2 {
+    grid-column: 71 / span 40;
+    grid-row: 2 / 3;
   }
   
-  #kawahvillas-access h2 {
-    grid-column: 95 / span 62;
+  #kawahvillas-contact-help #card-help-3 {
+    grid-column: 117 / span 40;
     grid-row: 2 / 3;
   }
 
-  #kawahvillas-access p {
-    grid-column: 95 / span 62;
-    grid-row: 3 / 4;
-  }
-
-  #kawahvillas-trip .grid {
-    justify-items: end;
-    text-align: right;
-  }
-
-  #kawahvillas-trip .line-border {
-    grid-column: 25 / span 62;
+  #kawahvillas-contact-form h2 {
+    grid-column: 25 / span 132;
     grid-row: 1 / 2;
   }
   
-  #kawahvillas-trip h2 {
-    grid-column: 25 / span 62;
+  #kawahvillas-contact-form .contact-name {
+    grid-column: 25 / span 64;
+    grid-row: 2 / 3;
+  }
+  
+  #kawahvillas-contact-form .contact-email {
+    grid-column: 93 / span 64;
     grid-row: 2 / 3;
   }
 
-  #kawahvillas-trip p {
-    grid-column: 25 / span 62;
-    grid-row: 3 / 4;
+  #kawahvillas-contact-form .contact-message {
+    grid-column: 25 / span 132;
+    grid-row: 4 / 5;
   }
 
-  #kawahvillas-trip .image-with-text {
-    grid-area: 1 / 95 / span 3 / span 62;
-    min-height: 100%;
-  }
-
-  #kawahvillas-guest .image-with-text {
-    grid-area: 1 / 25 / span 3 / span 62;
-    min-height: 100%;
-  }
-  
-  #kawahvillas-guest .line-border {
-    grid-column: 95 / span 62;
-    grid-row: 1 / 2;
-  }
-  
-  #kawahvillas-guest h2 {
-    grid-column: 95 / span 62;
-    grid-row: 2 / 3;
-  }
-
-  #kawahvillas-guest p {
-    grid-column: 95 / span 62;
-    grid-row: 3 / 4;
-  }
-
-  #kawahvillas-nocontract .grid {
-    justify-items: end;
-    text-align: right;
-  }
-
-  #kawahvillas-nocontract .line-border {
-    grid-column: 25 / span 62;
-    grid-row: 1 / 2;
-  }
-  
-  #kawahvillas-nocontract h2 {
-    grid-column: 25 / span 62;
-    grid-row: 2 / 3;
-  }
-
-  #kawahvillas-nocontract p {
-    grid-column: 25 / span 62;
-    grid-row: 3 / 4;
-  }
-
-  #kawahvillas-nocontract .image-with-text {
-    grid-area: 1 / 95 / span 3 / span 62;
-    min-height: 100%;
-  }
-
-  #kawahvillas-subscription .content {
+  #kawahvillas-contact-form .button {
     grid-column: 13 / span 156;
+    grid-row: 5 / 6;
   }
-
-  #kawahvillas-duo-membership .grid {
-    min-height: 0;
-  }
-
-  #kawahvillas-duo-membership .card-duo-membership {
-    grid-column: 57 / span 68;
-    margin: 5em 0;
-  }
-
-  #kawahvillas-duo-membership .card-duo-membership a {
-    margin: auto auto 0 auto;
-  }
-
-  #kawahvillas-live .content {
-    grid-column: 13 / span 156;
-  }
-
+  
   #footer-area {
     padding: 5em 0;
   }
@@ -831,7 +686,7 @@ footer {
     margin: 4em auto;
   }
 
-  #banner .content { 
+  #kawahvillas-blog-result .content {
     min-height: 75vmin;
   }
 }
@@ -845,7 +700,7 @@ footer {
     font-size: 18px;
   }
 
-  #banner .content { 
+  #kawahvillas-blog-result .content {
     min-height: 60vmin;
   }
 }
@@ -859,7 +714,7 @@ footer {
     font-size: 18px;
   }
 
-  #banner .content {
+  #kawahvillas-blog-result .content {
     min-height: 45vmin;
   }
 }

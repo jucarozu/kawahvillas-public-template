@@ -324,7 +324,7 @@ header {
   font-size: 8em;
 }
 
-#kawahvillas-help i.fa-plane {  
+#kawahvillas-help i.fa-plane {
   transform: rotate(-45deg);
 }
 
@@ -341,10 +341,8 @@ header {
   min-height: 75vmin;
 }
 
-#kawahvillas-help .card-help h4 {
+#kawahvillas-help .card-help h5 {
   padding: 1.5rem;
-  height: 2.5em;
-  color: var(--support);
 }
 
 #kawahvillas-help .card-help a {
