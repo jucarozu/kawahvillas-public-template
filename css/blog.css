@@ -29,6 +29,7 @@
   align-items: flex-start;
   justify-content: flex-end;
   padding: 0 10em 6em 2em;
+  margin: 0 0 4em 0;
   min-height: 120vmin;
   background-image: url("../img/img_52.jpg");
   background-repeat: no-repeat;
