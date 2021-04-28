@@ -9,7 +9,7 @@
   align-items: stretch;
   justify-content: flex-end;
   padding: 0 5.5em 5.5em 2em;
-  min-height: 120vmin;
+  min-height: 150vmin;
   background-image: url("../img/img_6.jpg");
   background-repeat: no-repeat;
   background-position: 50% 40%;
@@ -264,6 +264,26 @@
   background-repeat: no-repeat;
   background-position: 50% 40%;
   background-size: cover;
+}
+
+/* #endregion */
+
+/* #region Large Mobile Styles */
+
+@media screen and (min-width: 460px) {
+  #banner .content {
+    min-height: 135vmin;
+  }
+}
+
+/* #endregion */
+
+/* #region Tablet Styles */
+
+@media screen and (min-width: 620px) {
+  #banner .content {
+    min-height: 120vmin;
+  }
 }
 
 /* #endregion */

@@ -9,8 +9,7 @@
   align-items: flex-start;
   justify-content: flex-end;
   padding: 0 10em 6em 2em;
-  min-height: 120vmin;
-  background-image: url("../img/img_8.jpg");
+  min-height: 150vmin;
   background-repeat: no-repeat;
   background-position: 0%;
   background-size: cover;
@@ -21,7 +20,20 @@
 }
 
 #kawahvillas-article .content {
-  grid-column: 2 / span 10;
+  grid-column: 3 / span 8;
+}
+
+#kawahvillas-article .content span {
+  padding: 0.5rem 0;
+}
+
+#kawahvillas-article .content h2 {
+  padding: 2rem 0;
+}
+
+#kawahvillas-article .content p {
+  color: var(--secondary);
+  padding: 1rem 0;
 }
 
 #kawahvillas-related-stories {
@@ -30,7 +42,7 @@
 
 #kawahvillas-related-stories h2 {
   grid-column: 2 / span 10;
-  padding: 3em 0;
+  padding: 2em 0;
   text-align: center;
 }
 
@@ -39,11 +51,43 @@
   align-items: flex-start;
   justify-content: flex-end;
   padding: 0 10em 6em 2em;
-  min-height: 120vmin;
+  min-height: 150vmin;
   background-image: url("../img/img_54.jpg");
   background-repeat: no-repeat;
   background-position: 0%;
   background-size: cover;
+}
+
+#kawahvillas-related-stories .slick-initialized .slick-slide {
+  display: flex;
+}
+
+/* #endregion */
+
+/* #region Large Mobile Styles */
+
+@media screen and (min-width: 460px) {
+  #banner .content {
+    min-height: 135vmin;
+  }
+
+  #kawahvillas-related-stories .content {
+    min-height: 135vmin;
+  }
+}
+
+/* #endregion */
+
+/* #region Tablet Styles */
+
+@media screen and (min-width: 620px) {
+  #banner .content {
+    min-height: 120vmin;
+  }
+
+  #kawahvillas-related-stories .content {
+    min-height: 120vmin;
+  }
 }
 
 /* #endregion */
@@ -58,7 +102,7 @@
   }
 
   #kawahvillas-article .content {
-    grid-column: 13 / span 156;
+    grid-column: 19 / span 144;
   }
 
   #kawahvillas-related-stories h2 {

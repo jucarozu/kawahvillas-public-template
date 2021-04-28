@@ -5,11 +5,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Last-Modified" content="0">
+  <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  
   <title>Blog Article - Kawahvillas</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/carousel.css">
   <link rel="stylesheet" href="css/blog-article.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
 
 <body>
@@ -45,11 +54,11 @@
 <main>
   <section id="banner">
     <div class="grid">
-      <div class="content grid-item flex flex-column">
-        <span class="text-support">Trips Adventures</span>
-        <h1 class="text-support flex-item">Unexpected Sunset</h1>
+      <div class="content grid-item flex flex-column" style="background-image: url('')">
+        <span class="text-support text-bold border-primary"></span>
+        <h1 class="text-support flex-item"></h1>
         <div class="quote flex-item flex flex-row">
-          <span class="text-support">October 2020, &nbsp;</span>
+          <span class="text-support">, &nbsp;</span>
           <span class="text-support">5 min. lecture</span>
         </div>
       </div>
@@ -59,7 +68,8 @@
   <section id="kawahvillas-article" class="section-spacing">
     <div class="grid">
       <div class="content grid-item flex flex-column">
-
+        <span class="text-primary">by </span>
+        
       </div>
     </div>
   </section>
@@ -67,16 +77,38 @@
   <section id="kawahvillas-related-stories" class="section-spacing">
     <div class="grid">
       <h2 class="text-secondary grid-item">Related Stories</h2>
-      <div class="content grid-item flex flex-column">
-        <span class="text-support">Locations</span>
-        <h3 class="text-support flex-item">An exotic paradise</h3>
-        <p class="text-support flex-item">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec erat ut lacus bibendum
-          sollicitudin vitae a mauris. Curabitur luctus mauris ac sapien pulvinar lobortis. Proin a luctus
-          tellus, sit amet tincidunt lorem.
-        </p>
-        <a href="#" class="button button-support-positive text-bold flex-item">Read</a>
+    </div>
+    <div class="carousel">
+      <button aria-label="Prev" class="carousel-prev">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+
+      <div class="carousel-list">
+        <div class="content flex flex-column">
+          <span class="text-support">Locations</span>
+          <h3 class="text-support flex-item">An exotic paradise</h3>
+          <p class="text-support flex-item">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec erat ut lacus bibendum
+            sollicitudin vitae a mauris. Curabitur luctus mauris ac sapien pulvinar lobortis. Proin a luctus
+            tellus, sit amet tincidunt lorem.
+          </p>
+          <a href="#" class="button button-support-positive text-bold flex-item">Read</a>
+        </div>
+        <div class="content flex flex-column">
+          <span class="text-support">Locations</span>
+          <h3 class="text-support flex-item">An exotic paradise</h3>
+          <p class="text-support flex-item">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec erat ut lacus bibendum
+            sollicitudin vitae a mauris. Curabitur luctus mauris ac sapien pulvinar lobortis. Proin a luctus
+            tellus, sit amet tincidunt lorem.
+          </p>
+          <a href="#" class="button button-support-positive text-bold flex-item">Read</a>
+        </div>
       </div>
+
+      <button aria-label="Next" class="carousel-next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
     </div>
   </section>
 </main>
@@ -138,6 +170,11 @@
     </div>
   </div>
 </footer>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="js/carousel.js"></script>
 
 </body>
 

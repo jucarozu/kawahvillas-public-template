@@ -9,7 +9,7 @@
   align-items: stretch;
   justify-content: flex-end;
   padding: 0 5.5em 5.5em 2em;
-  min-height: 120vmin;
+  min-height: 150vmin;
   background-image: url("../img/img_1.jpg");
   background-repeat: no-repeat;
   background-position: 25% 50%;
@@ -180,7 +180,7 @@
   grid-column: 2 / span 10;
   align-items: center;
   justify-content: center;
-  min-height: 120vmin;
+  min-height: 150vmin;
   background-image: url("../img/img_15.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -195,6 +195,34 @@
 #kawahvillas-pass .content h3 {
   padding: 1em 2em;
   text-align: center;
+}
+
+/* #endregion */
+
+/* #region Large Mobile Styles */
+
+@media screen and (min-width: 460px) {
+  #banner .content {
+    min-height: 135vmin;
+  }
+  
+  #kawahvillas-pass .content {
+    min-height: 135vmin;
+  }
+}
+
+/* #endregion */
+
+/* #region Tablet Styles */
+
+@media screen and (min-width: 620px) {
+  #banner .content {
+    min-height: 120vmin;
+  }
+  
+  #kawahvillas-pass .content {
+    min-height: 120vmin;
+  }
 }
 
 /* #endregion */

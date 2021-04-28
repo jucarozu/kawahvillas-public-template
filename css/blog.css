@@ -30,11 +30,40 @@
   justify-content: flex-end;
   padding: 0 10em 6em 2em;
   margin: 0 0 4em 0;
-  min-height: 120vmin;
-  background-image: url("../img/img_52.jpg");
+  min-height: 150vmin;
   background-repeat: no-repeat;
   background-position: 0%;
   background-size: cover;
+}
+
+#kawahvillas-blog-result .content p {
+  color: var(--support);
+  padding: 1rem 0;
+}
+
+#kawahvillas-blog-result .content .more-link,
+#kawahvillas-blog-result .content .screen-reader-text {
+  display: none;
+}
+
+/* #endregion */
+
+/* #region Large Mobile Styles */
+
+@media screen and (min-width: 460px) {
+  #kawahvillas-blog-result .content {
+    min-height: 135vmin;
+  }
+}
+
+/* #endregion */
+
+/* #region Tablet Styles */
+
+@media screen and (min-width: 620px) {
+  #kawahvillas-blog-result .content {
+    min-height: 120vmin;
+  }
 }
 
 /* #endregion */
