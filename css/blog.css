@@ -20,11 +20,11 @@
   background-color: var(--support);
 }
 
-#kawahvillas-blog-result {
+#kawahvillas-blog-posts {
   background-color: var(--support);
 }
 
-#kawahvillas-blog-result .content {
+#kawahvillas-blog-posts .content {
   grid-column: 2 / span 10;
   align-items: flex-start;
   justify-content: flex-end;
@@ -36,14 +36,15 @@
   background-size: cover;
 }
 
-#kawahvillas-blog-result .content p {
+#kawahvillas-blog-posts .content p {
   color: var(--support);
   padding: 1rem 0;
 }
 
-#kawahvillas-blog-result .content .more-link,
-#kawahvillas-blog-result .content .screen-reader-text {
-  display: none;
+#kawahvillas-blog-posts .content .rt-reading-time,
+#kawahvillas-blog-posts .content .more-link,
+#kawahvillas-blog-posts .content .screen-reader-text {
+  display: none !important;
 }
 
 /* #endregion */
@@ -51,7 +52,7 @@
 /* #region Large Mobile Styles */
 
 @media screen and (min-width: 460px) {
-  #kawahvillas-blog-result .content {
+  #kawahvillas-blog-posts .content {
     min-height: 135vmin;
   }
 }
@@ -61,7 +62,7 @@
 /* #region Tablet Styles */
 
 @media screen and (min-width: 620px) {
-  #kawahvillas-blog-result .content {
+  #kawahvillas-blog-posts .content {
     min-height: 120vmin;
   }
 }
@@ -81,7 +82,7 @@
     grid-row: 2 / 3;
   }
 
-  #kawahvillas-blog-result .content {
+  #kawahvillas-blog-posts .content {
     grid-column: 13 / span 156;
     min-height: 105vmin;
     padding: 0 30em 6em 4em;
@@ -93,7 +94,7 @@
 /* #region Laptop Styles */
 
 @media screen and (min-width: 1200px) {
-  #kawahvillas-blog-result .content {
+  #kawahvillas-blog-posts .content {
     min-height: 90vmin;
   }
 }
@@ -103,7 +104,7 @@
 /* #region Desktop Styles */
 
 @media screen and (min-width: 1440px) {
-  #kawahvillas-blog-result .content {
+  #kawahvillas-blog-posts .content {
     min-height: 75vmin;
   }
 }
@@ -113,7 +114,7 @@
 /* #region Large Desktop Styles */
 
 @media screen and (min-width: 1680px) {
-  #kawahvillas-blog-result .content {
+  #kawahvillas-blog-posts .content {
     min-height: 60vmin;
   }
 }
@@ -123,7 +124,7 @@
 /* #region Extra Desktop Styles */
 
 @media screen and (min-width: 1920px) {
-  #kawahvillas-blog-result .content {
+  #kawahvillas-blog-posts .content {
     min-height: 45vmin;
   }
 }
@@ -133,7 +134,7 @@
 /* #region Full Desktop Styles */
 
 @media screen and (min-width: 2240px) {
-  #kawahvillas-blog-result .content {
+  #kawahvillas-blog-posts .content {
     min-height: 30vmin;
   }
 }
