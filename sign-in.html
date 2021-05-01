@@ -58,11 +58,11 @@
   </section>
 
   <form id="kawahvillas-auth-sign-in">
-    <input type="email" class="flex-item" name="email" placeholder="Email" required autofocus />
-    <input type="password" class=" flex-item" name="password" placeholder="Password" required />
+    <input type="email" class="email flex-item" name="email" placeholder="Email" required autofocus />
+    <input type="password" class="password flex-item" name="password" placeholder="Password" required />
     <div class="auth-recovery flex-item flex flex-row">
       <div class="auth-remember flex-item flex flex-row">
-        <input type="checkbox" name="remember" id="remember" />
+        <input type="checkbox" class="remember" name="remember" id="remember" />
         <label for="remember">&nbsp; Remember me</label>
       </div>
       <a href="#" class="text-secondary link flex-item">Forgot Password?</a>
@@ -71,9 +71,9 @@
   </form>
 
   <form id="kawahvillas-auth-sign-up">
-    <input type="text" class="flex-item" name="name" placeholder="Name" required autofocus />
-    <input type="email" class="flex-item" name="email" placeholder="Email" required />
-    <input type="password" class="flex-item" name="password" placeholder="Password" required />
+    <input type="text" class="name flex-item" name="name" placeholder="Name" required autofocus />
+    <input type="email" class="email flex-item" name="email" placeholder="Email" required />
+    <input type="password" class="password flex-item" name="password" placeholder="Password" required />
     <select class="crs-country flex-item" name="country"></select>
     <input type="tel" class="phone flex-item" name="phone" required />
     <div class="auth-privacy-policy flex-item flex flex-row">
@@ -93,6 +93,8 @@
 
 <script src="js/utilities/tabs.js"></script>
 <script src="js/utilities/intl-tel-input.js"></script>
+
+<script src="js/sign-in.js"></script>
 
 </body>
 
