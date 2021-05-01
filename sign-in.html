@@ -13,35 +13,86 @@
 
   <title>Sign in - Kawahvillas</title>
   
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabby/12.0.3/css/tabby-ui.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.min.css">
 
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/sign-in.css">
+  <link rel="stylesheet" href="css/auth.css">
 </head>
 
 <body>
 
-<header>
-  <div class="grid">
-    <a href="index.html" title="Kawahvillas - Luxury Travelling" class="logo link grid-item">
+<link rel="stylesheet" href="css/sign-in.css">
+
+<main class="grid">
+  <section id="kawahvillas-auth-sign-in-slogan">
+    <p class="text-support flex-item">Access to your account, and book the villa for your next adventure</p>
+  </section>
+
+  <section id="kawahvillas-auth-sign-up-slogan">
+    <p class="text-support flex item">Create your account, select your membership and start to travel</p>
+  </section>
+
+  <section id="kawahvillas-auth-footer">
+    <span class="text-support flex-item">&copy; 2021 Kawahvillas. All rights reserved.</span>
+  </section>
+
+  <section id="kawahvillas-auth-logo" class="grid-item flex flex-row">
+    <a href="index.html" title="Kawahvillas - Luxury Travelling" class="logo link flex-item">
       <img src="img/logo/kawahvillas_logo_positive.svg" alt="Kawahvillas - Luxury Travelling" />
     </a>
-  </div>
-</header>
+  </section>
 
-<main>
-  <div class="grid">
-    
-  </div>
+  <section id="kawahvillas-auth-return" class="grid-item flex flex-row">
+    <a href="index.html" class="text-secondary link flex-item">
+      <i class="fas fa-arrow-left text-primary"></i> &nbsp;Return to homepage
+    </a>
+  </section>
+
+  <section id="kawahvillas-auth-tabs" class="flex flex-row">
+    <ul class="flex-item grid" data-tabs>
+      <li class="tab-sign-in grid-item"><a data-tabby-default href="#kawahvillas-auth-sign-in" class="text-secondary link">Sign In</a></li>
+      <li class="tab-sign-up grid-item"><a href="#kawahvillas-auth-sign-up" class="text-secondary link">Register</a></li>
+    </ul>
+  </section>
+
+  <form id="kawahvillas-auth-sign-in">
+    <input type="email" class="flex-item" name="email" placeholder="Email" required autofocus />
+    <input type="password" class=" flex-item" name="password" placeholder="Password" required />
+    <div class="auth-recovery flex-item flex flex-row">
+      <div class="auth-remember flex-item flex flex-row">
+        <input type="checkbox" name="remember" id="remember" />
+        <label for="remember">&nbsp; Remember me</label>
+      </div>
+      <a href="#" class="text-secondary link flex-item">Forgot Password?</a>
+    </div>
+    <input type="submit" class="button button-secondary-negative flex-item" name="submit" value="SIGN IN" />
+  </form>
+
+  <form id="kawahvillas-auth-sign-up">
+    <input type="text" class="flex-item" name="name" placeholder="Name" required autofocus />
+    <input type="email" class="flex-item" name="email" placeholder="Email" required />
+    <input type="password" class="flex-item" name="password" placeholder="Password" required />
+    <select class="crs-country flex-item" name="country"></select>
+    <input type="tel" class="phone flex-item" name="phone" required />
+    <div class="auth-privacy-policy flex-item flex flex-row">
+      <span class="privacy-policy flex-item">
+        We use your information to personalize your experience. 
+        By continuing, you are agreeing to Kawahvilla´s <a href="#" class="link">Privacy Policy.</a>
+      </span>
+    </div>
+    <input type="submit" class="button button-secondary-negative flex-item" name="submit" value="SIGN UP" />
+  </form>
 </main>
 
-<footer>
-  <div id="footer-copyright" class="grid">
-    <div class="content flex flex-row">
-      <span class="text-support">&copy; 2021 Kawahvillas. All rights reserved.</span>
-    </div>
-  </div>
-</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tabby/12.0.3/js/tabby.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/country-region-selector/0.5.1/crs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.min.js"></script>
+
+<script src="js/utilities/tabs.js"></script>
+<script src="js/utilities/intl-tel-input.js"></script>
 
 </body>
 

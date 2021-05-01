@@ -104,7 +104,7 @@
 
 /* #region Mini Laptop Styles */
 
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 1024px) {
   #kawahvillas-banner .content {
     grid-column: 13 / span 156;
     min-height: 105vmin;

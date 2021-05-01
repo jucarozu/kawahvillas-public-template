@@ -71,7 +71,7 @@
 
 /* #region Mini Laptop Styles */
 
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 1024px) {
   #kawahvillas-blog-header h1 {
     grid-column: 25 / span 66;
     grid-row: 1 / 2;

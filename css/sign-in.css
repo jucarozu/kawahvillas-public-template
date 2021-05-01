@@ -1,0 +1,143 @@
+/* #region Mobile Styles */
+
+#kawahvillas-auth-tabs {
+  grid-column: 2 / span 10;
+}
+
+#kawahvillas-auth-tabs ul li {
+  text-align: center;
+}
+
+#kawahvillas-auth-tabs [role=tablist] {
+  border: none;
+  width: 100%;
+}
+
+#kawahvillas-auth-tabs [role=tab] {
+  border: none;
+}
+
+#kawahvillas-auth-tabs [role=tab]:hover {
+  background-color: transparent;
+}
+
+#kawahvillas-auth-tabs [role=tab]:focus {
+  outline: none;
+}
+
+#kawahvillas-auth-tabs [role=tab][aria-selected=true] {
+  background-color: transparent;
+  border-bottom: 1px solid var(--primary);
+  color: var(--primary);
+  outline: none;
+}
+
+#kawahvillas-auth-tabs .tab-sign-in {
+  grid-column: 2 / span 5;
+}
+
+#kawahvillas-auth-tabs .tab-sign-up {
+  grid-column: 7 / span 5;
+}
+
+#kawahvillas-auth-sign-in {
+  grid-column: 2 / span 10;
+  align-items: center;
+  min-height: 75vh;
+}
+
+#kawahvillas-auth-sign-in input {
+  border: 1px solid var(--secondary);
+  margin: 0.5em 0;
+  padding: 1em;
+  width: 100%;
+}
+
+#kawahvillas-auth-sign-in input[type="checkbox"] {
+  width: auto;
+}
+
+#kawahvillas-auth-sign-in .auth-recovery {
+  align-items: center;
+  justify-content: space-between;
+}
+
+#kawahvillas-auth-sign-in .auth-recovery .auth-remember {
+  align-items: center;
+  justify-content: space-between;
+}
+
+#kawahvillas-auth-sign-up {
+  grid-column: 2 / span 10;
+  align-items: center;
+  min-height: 75vh;
+}
+
+#kawahvillas-auth-sign-up input,
+#kawahvillas-auth-sign-up select {
+  border: 1px solid var(--secondary);
+  margin: 0.5em 0 !important;
+  padding: 1em;
+  width: 100%;
+}
+
+#kawahvillas-auth-sign-up input[type="checkbox"] {
+  width: auto;
+}
+
+#kawahvillas-auth-sign-up .iti {
+  width: 100%;
+}
+
+#kawahvillas-auth-sign-up .iti .phone {
+  padding-left: 5em;
+}
+
+#kawahvillas-auth-sign-up .iti .iti__selected-flag:focus,
+#kawahvillas-auth-sign-up .iti .iti__selected-flag[role=combobox][aria-expanded=true] {
+  outline: none;
+}
+
+#kawahvillas-auth-sign-up .iti .iti__selected-flag:hover {
+  background-color: transparent;
+}
+
+#kawahvillas-auth-sign-up .privacy-policy {
+  text-align: center;
+}
+
+/* #endregion */
+
+/* #region Mini Laptop Styles */
+
+@media screen and (min-width: 1024px) {
+  #kawahvillas-auth-tabs {
+    grid-column: 95 / span 62;
+    grid-row: 2;
+  }
+
+  #kawahvillas-auth-tabs .tab-sign-in {
+    grid-column: 1 / span 90;
+  }
+  
+  #kawahvillas-auth-tabs .tab-sign-up {
+    grid-column: 91 / span 90;
+  }
+
+  #kawahvillas-auth-tabs .tab-sign-in a,
+  #kawahvillas-auth-tabs .tab-sign-up a {
+    width: 100%;
+  }
+
+  #kawahvillas-auth-sign-in {
+    grid-column: 95 / span 62;
+    grid-row: 3;
+  }
+
+  #kawahvillas-auth-sign-up {
+    grid-column: 95 / span 62;
+    grid-row: 3;
+  }
+}
+
+/* #endregion */

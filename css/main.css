@@ -1,6 +1,7 @@
 /* #region Imports */
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
 
 /* #endregion */
@@ -37,6 +38,7 @@ img {
 /* #region Base Styles */
 
 body {
+  display: block;
   background: var(--support);
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
@@ -194,25 +196,8 @@ h5 {
   font-size: 1.6em;
 }
 
-label {
-  font-size: 1.6em;
-}
-
 p {
-  font-size: 1.2em;
   line-height: 1.5;
-}
-
-li {
-  font-size: 1.2em;
-}
-
-a.button {
-  font-size: 1em;
-}
-
-a.link {
-  font-size: 0.8em;
 }
 
 h1, h2, h3, h4, label, p, li, a, span {
@@ -225,6 +210,22 @@ h1, h2, h3, h4, label, p, li, a, span {
 
 body {
   font-size: 10px;
+}
+
+p {
+  font-size: 1.4em;
+}
+
+li {
+  font-size: 1.4em;
+}
+
+label, a {
+  font-size: 1em;
+}
+
+span {
+  font-size: 1em;
 }
 
 .grid {
@@ -257,7 +258,6 @@ header {
 }
 
 #navbar .menu a.button {
-  font-size: 0.8em;
   padding: 0.75em 1.5em;
 }
 
@@ -419,9 +419,17 @@ footer {
 
 /* #region Mini Laptop Styles */
 
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 1024px) {
   body {
     font-size: 12px;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  li {
+    font-size: 1em;
   }
 
   .grid {
@@ -449,7 +457,6 @@ footer {
   }
 
   #navbar .menu a.button {
-    font-size: 0.8em;
     padding: 0.5em 1em;
   }
 

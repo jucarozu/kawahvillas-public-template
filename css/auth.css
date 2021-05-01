@@ -1,0 +1,67 @@
+/* #region Mobile Styles */
+
+#kawahvillas-auth-sign-in-slogan,
+#kawahvillas-auth-sign-up-slogan,
+#kawahvillas-auth-footer {
+  display: none;
+}
+
+#kawahvillas-auth-logo {
+  grid-column: 4 / span 6;
+  justify-content: center;
+}
+
+#kawahvillas-auth-return {
+  grid-column: 2 / span 10;
+}
+
+/* #endregion */
+
+/* #region Mini Laptop Styles */
+
+@media screen and (min-width: 1024px) {
+  #kawahvillas-auth-return,
+  #kawahvillas-auth-sign-in-slogan,
+  #kawahvillas-auth-sign-up-slogan,
+  #kawahvillas-auth-footer {
+    background-color: var(--secondary);
+    padding: 1em 10em;
+  }
+
+  #kawahvillas-auth-sign-in-slogan,
+  #kawahvillas-auth-footer {
+    display: flex;
+  }
+
+  #kawahvillas-auth-return {
+    grid-column: 1 / span 86;
+    grid-row: 1;
+  }
+
+  #kawahvillas-auth-return a {
+    color: var(--support);
+  }
+
+  #kawahvillas-auth-sign-in-slogan,
+  #kawahvillas-auth-sign-up-slogan {
+    grid-area: 2 / 1 / span 2 / span 86;
+    align-items: center;
+  }
+
+  #kawahvillas-auth-sign-in-slogan p,
+  #kawahvillas-auth-sign-up-slogan p {
+    font-size: 3em;
+  }
+
+  #kawahvillas-auth-footer {
+    grid-column: 1 / span 86;
+    grid-row: 4;
+  }
+
+  #kawahvillas-auth-logo {
+    grid-column: 115 / span 22;
+    grid-row: 1;
+  }
+}
+
+/* #endregion */

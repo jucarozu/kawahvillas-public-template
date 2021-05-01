@@ -222,7 +222,7 @@
 
 /* #region Mini Laptop Styles */
 
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 1024px) {
   #banner .content {
     grid-column: 13 / span 156;
     align-items: center;

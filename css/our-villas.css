@@ -64,7 +64,7 @@
 
 /* #region Mini Laptop Styles */
 
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 1024px) {
   #kawahvillas-search-header h1 {
     grid-column: 25 / span 66;
     font-size: 3.5em;
