@@ -13,4 +13,10 @@ document.addEventListener('tabby', function (event) {
       $("#kawahvillas-auth-sign-up .name").focus();
     }
   }
+
+  if (content.id == "kawahvillas-auth-sign-in") {
+    history.pushState({}, "", "/auth/sign-in");
+  } else {
+    history.pushState({}, "", "/auth/sign-up");
+  }
 }, false);
