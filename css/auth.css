@@ -34,7 +34,7 @@
   }
 
   #kawahvillas-auth-return {
-    grid-column: 1 / span 86;
+    grid-column: 1 / span 90;
     grid-row: 1;
   }
 
@@ -44,7 +44,7 @@
 
   #kawahvillas-auth-sign-in-slogan,
   #kawahvillas-auth-sign-up-slogan {
-    grid-area: 2 / 1 / span 2 / span 86;
+    grid-area: 2 / 1 / span 2 / span 90;
     align-items: center;
   }
 
@@ -54,12 +54,12 @@
   }
 
   #kawahvillas-auth-footer {
-    grid-column: 1 / span 86;
+    grid-column: 1 / span 90;
     grid-row: 4;
   }
 
   #kawahvillas-auth-logo {
-    grid-column: 115 / span 22;
+    grid-column: 119 / span 22;
     grid-row: 1;
   }
 }

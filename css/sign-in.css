@@ -112,7 +112,7 @@
 
 @media screen and (min-width: 1024px) {
   #kawahvillas-auth-tabs {
-    grid-column: 95 / span 62;
+    grid-column: 99 / span 62;
     grid-row: 2;
   }
 
@@ -130,12 +130,12 @@
   }
 
   #kawahvillas-auth-sign-in {
-    grid-column: 95 / span 62;
+    grid-column: 99 / span 62;
     grid-row: 3;
   }
 
   #kawahvillas-auth-sign-up {
-    grid-column: 95 / span 62;
+    grid-column: 99 / span 62;
     grid-row: 3;
   }
 }
