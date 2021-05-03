@@ -37,6 +37,11 @@ img {
 
 /* #region Base Styles */
 
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 body {
   display: block;
   background: var(--support);
@@ -53,7 +58,7 @@ body {
 }
 
 .grid-item {
-  padding: 1rem 0;
+  padding: 1em 0;
 }
 
 .flex {
@@ -61,7 +66,7 @@ body {
 }
 
 .flex-item {
-  padding: 1rem 0;
+  padding: 1em 0;
 }
 
 .flex-row {
@@ -213,20 +218,16 @@ body {
   font-size: 10px;
 }
 
-p {
-  font-size: 1.4em;
+p, li {
+  font-size: 1rem;
 }
 
-li {
-  font-size: 1.4em;
-}
-
-label, a {
+label, a, span {
   font-size: 1em;
 }
 
-span {
-  font-size: 1em;
+.link, .button {
+  transition: all 0.35s ease;
 }
 
 .grid {
@@ -235,77 +236,6 @@ span {
 
 header {
   background-color: var(--support);
-}
-
-#navbar {
-  padding: 2em 0;
-}
-
-#navbar .logo {
-  grid-column: 2 / span 4;
-}
-
-#navbar .menu {
-  display: none;
-}
-
-#navbar .menu a.link {
-  color: var(--secondary);
-  padding: 2em 1em;
-}
-
-#navbar .menu a.link:hover {
-  color: var(--primary);
-}
-
-#navbar .menu a.button {
-  padding: 0.75em 1.5em;
-}
-
-#navbar .menu .dropdown {
-  display: inline-block;
-  position: relative;
-}
-
-#navbar .menu .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: var(--support);
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  margin-top: 1em;
-  min-width: 160px;
-  z-index: 1;
-}
-
-#navbar .menu .dropdown-content li {
-  font-size: 1em;
-}
-
-#navbar .menu .dropdown-content a {
-  display: block;
-  color: var(--secondary);
-  padding: 1em;
-  text-decoration: none;
-}
-
-#navbar .menu .dropdown-content a:hover {
-  color: var(--primary);
-}
-
-#navbar .menu .dropdown:hover .dropdown-content {
-  display: block;
-}
-
-#navbar .menu .dropdown .fa-chevron-down {
-  color: var(--secondary);
-  font-size: 0.7em;
-  padding-left: 0.25em;
-}
-
-#navbar .menu .dropdown:hover .fa-chevron-down,
-#navbar .menu .dropdown .fa-chevron-down:hover {
-  color: var(--primary);
-  cursor: pointer;
 }
 
 footer {
@@ -317,7 +247,6 @@ footer {
 }
 
 #footer-area h4 {
-  font-size: 1.4em;
   padding: 0 0 1em 0;
 }
 
@@ -350,7 +279,7 @@ footer {
 
 #footer-area .logo img {
   height: auto;
-  width: 75%;
+  width: 90%;
 }
 
 #footer-area .navigation {
@@ -418,6 +347,16 @@ footer {
 
 /* #endregion */
 
+/* #region Large Tablet Styles */
+
+@media screen and (min-width: 800px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* #endregion */
+
 /* #region Mini Laptop Styles */
 
 @media screen and (min-width: 1024px) {
@@ -425,42 +364,14 @@ footer {
     font-size: 12px;
   }
 
-  p {
-    font-size: 1.2em;
-  }
-
-  li {
-    font-size: 1em;
+  p, li {
+    font-size: 1.2rem;
   }
 
   .grid {
     grid-template-columns: repeat(180, 1fr);
   }
   
-  #navbar .logo {
-    grid-column: 13 / span 24;
-  }
-  
-  #navbar .menu {
-    display: flex;
-    align-items: center;
-  }
-
-  #navbar .menu-primary {
-    grid-column: 55 / span 71;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-  
-  #navbar .menu-secondary {
-    grid-column: 136 / span 33;  
-    justify-content: space-between;
-  }
-
-  #navbar .menu a.button {
-    padding: 0.5em 1em;
-  }
-
   #footer-area {
     padding: 5em 0;
   }

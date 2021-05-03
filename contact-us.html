@@ -16,36 +16,52 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/utilities/navbar.css" />
 </head>
 
 <body>
 
 <header>
-  <nav id="navbar" class="grid">
+  <section class="wrapper grid">
     <a href="index.html" title="Kawahvillas - Luxury Travelling" class="logo link grid-item">
       <img src="img/logo/kawahvillas_logo_positive.svg" alt="Kawahvillas - Luxury Travelling" />
     </a>
-    <ul class="menu menu-primary grid-item flex flex-row">
-      <li><a href="our-villas.html" class="link">Our Villas</a></li>
-      <li class="dropdown">
-        <a href="memberships.html" class="link dropdown-button">
-          Memberships <i class="fas fa-chevron-down"></i>
-        </a>
-        <ul class="dropdown-content">
-          <li><a href="single-membership.html" class="link">Single Membership</a></li>
-          <li><a href="duo-membership.html" class="link">Duo Membership</a></li>
-          <li><a href="group-membership.html" class="link">Group Membership</a></li>
-        </ul>
-      </li>
-      <li><a href="blog.html" class="link">Blog</a></li>
-      <li><a href="about-us.html" class="link">About Us</a></li>
-      <li><a href="contact-us.html" class="link">Contact Us</a></li>
-    </ul>
-    <ul class="menu menu-secondary grid-item flex flex-row">
-      <li><a href="auth.html" class="link">SIGN IN</a></li>
-      <li><a href="get-started.html" class="button button-primary-positive">Get Started</a></li>
-    </ul>
-  </nav>
+
+    <button type="button" class="opened-menu grid-item">
+      <i class="fas fa-bars text-primary"></i>
+    </button>
+
+    <div class="overlay"></div>
+
+    <nav class="navbar grid-item grid">
+      <button type="button" class="closed-menu">
+        <i class="fas fa-times closed-icon"></i>
+      </button>
+
+      <ul class="menu menu-primary">
+        <li class="menu-item"><a href="our-villas.html" class="link text-secondary">Our Villas</a></li>
+        <li class="menu-item menu-item-has-children link text-secondary">
+          <a href="memberships.html" class="link text-secondary">
+            Memberships <i class="fas fa-chevron-down link text-secondary"></i>
+          </a>
+          <i class="fas fa-chevron-down" data-toggle="sub-menu"></i>
+          <ul class="sub-menu dropdown-content">
+            <li class="menu-item"><a href="single-membership.html" class="link text-secondary">Single Membership</a></li>
+            <li class="menu-item"><a href="duo-membership.html" class="link text-secondary">Duo Membership</a></li>
+            <li class="menu-item"><a href="group-membership.html" class="link text-secondary">Group Membership</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="blog.html" class="link text-secondary">Blog</a></li>
+        <li class="menu-item"><a href="about-us.html" class="link text-secondary">About Us</a></li>
+        <li class="menu-item"><a href="contact-us.html" class="link text-secondary">Contact Us</a></li>
+      </ul>
+
+      <ul class="menu menu-secondary">
+        <li class="menu-item"><a href="auth.html" class="link text-secondary">SIGN IN</a></li>
+        <li class="menu-item"><a href="get-started.html" class="button button-primary-positive">Get Started</a></li>
+      </ul>
+    </nav>
+  </section>
 </header>
 
 <link rel="stylesheet" href="css/contact-us.css">
@@ -148,6 +164,10 @@
     </div>
   </div>
 </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="js/utilities/navbar.js"></script>
 
 </body>
 

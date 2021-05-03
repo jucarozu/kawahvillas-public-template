@@ -55,9 +55,20 @@
   font-size: 1.25em;
 }
 
-#kawahvillas-search-villas .content .result-text .result-guests,
+#kawahvillas-search-villas .content .result-text .result-guests {
+  grid-column: 1 / span 6;
+}
+
 #kawahvillas-search-villas .content .result-text .result-bedrooms {
-  padding-right: 1em;
+  grid-column: 7 / span 6;
+}
+
+#kawahvillas-search-villas .content .result-text .result-bathrooms {
+  grid-column: 1 / span 6;
+}
+
+#kawahvillas-search-villas .content .result-text .result-area {
+  grid-column: 7 / span 6;
 }
 
 /* #endregion */
@@ -98,6 +109,22 @@
   #kawahvillas-search-villas .content .result-text {
     padding-left: 2em;
     width: 50%;
+  }
+
+  #kawahvillas-search-villas .content .result-text .result-guests {
+    grid-column: 1 / span 90;
+  }
+  
+  #kawahvillas-search-villas .content .result-text .result-bedrooms {
+    grid-column: 91 / span 90;
+  }
+  
+  #kawahvillas-search-villas .content .result-text .result-bathrooms {
+    grid-column: 1 / span 90;
+  }
+  
+  #kawahvillas-search-villas .content .result-text .result-area {
+    grid-column: 91 / span 90;
   }
 }
 

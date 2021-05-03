@@ -23,6 +23,10 @@
   text-align: center;
 }
 
+#kawahvillas-auth-tabs ul li a {
+  width: 100%;
+}
+
 #kawahvillas-auth-tabs [role=tablist] {
   border: none;
   width: 100%;

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Last-Modified" content="0">
+  <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  
+  <title>Villa Vista del Caribe - Kawahvillas</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabby/12.0.3/css/tabby-ui.min.css">
+  <link rel="stylesheet" href="https://cdn.dhtmlx.com/calendar/edge/calendar.css">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/utilities/navbar.css" />
+  <link rel="stylesheet" href="css/utilities/carousel.css">
+  <link rel="stylesheet" href="css/utilities/calendar.css">
+</head>
+
+<body>
+
+<header>
+  <section class="wrapper grid">
+    <a href="index.html" title="Kawahvillas - Luxury Travelling" class="logo link grid-item">
+      <img src="img/logo/kawahvillas_logo_positive.svg" alt="Kawahvillas - Luxury Travelling" />
+    </a>
+
+    <button type="button" class="opened-menu grid-item">
+      <i class="fas fa-bars text-primary"></i>
+    </button>
+
+    <div class="overlay"></div>
+
+    <nav class="navbar grid-item grid">
+      <button type="button" class="closed-menu">
+        <i class="fas fa-times closed-icon"></i>
+      </button>
+
+      <ul class="menu menu-primary">
+        <li class="menu-item"><a href="our-villas.html" class="link text-secondary">Our Villas</a></li>
+        <li class="menu-item menu-item-has-children link text-secondary">
+          <a href="memberships.html" class="link text-secondary">
+            Memberships <i class="fas fa-chevron-down link text-secondary"></i>
+          </a>
+          <i class="fas fa-chevron-down" data-toggle="sub-menu"></i>
+          <ul class="sub-menu dropdown-content">
+            <li class="menu-item"><a href="single-membership.html" class="link text-secondary">Single Membership</a></li>
+            <li class="menu-item"><a href="duo-membership.html" class="link text-secondary">Duo Membership</a></li>
+            <li class="menu-item"><a href="group-membership.html" class="link text-secondary">Group Membership</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="blog.html" class="link text-secondary">Blog</a></li>
+        <li class="menu-item"><a href="about-us.html" class="link text-secondary">About Us</a></li>
+        <li class="menu-item"><a href="contact-us.html" class="link text-secondary">Contact Us</a></li>
+      </ul>
+
+      <ul class="menu menu-secondary">
+        <li class="menu-item"><a href="auth.html" class="link text-secondary">SIGN IN</a></li>
+        <li class="menu-item"><a href="get-started.html" class="button button-primary-positive">Get Started</a></li>
+      </ul>
+    </nav>
+  </section>
+</header>
+
+<link rel="stylesheet" href="css/villa.css">
+
+<section id="kawahvillas-villa-gallery" class="section-spacing">
+  <div class="carousel">
+    <button aria-label="Prev" class="carousel-prev">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <div class="carousel-list">
+      <div class="content flex flex-column" style="background-image: url('img/villas/villa_vista_del_caribe/img_1.jpg')">
+        <h3 class="text-support flex-item">Swimming Pool</h3>
+      </div>
+      <div class="content flex flex-column" style="background-image: url('img/villas/villa_vista_del_caribe/img_2.jpg')">
+        <h3 class="text-support flex-item">External Area</h3>
+      </div>
+    </div>
+
+    <button aria-label="Next" class="carousel-next">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+</section>
+
+<main class="grid section-spacing">
+  <section id="kawahvillas-villa-description">
+    <div class="description-text flex flex-column">
+      <span id="description-location" class="description-location text-secondary">Cabarete, Dominican Republic</span>
+      <h2 class="description-villa text-primary flex-item">Villa Vista del Caribe</h2>
+      <div class="description-amenities flex-item flex">
+        <span class="description-guests text-secondary flex-item"><span class="text-bold">6</span> Guests</span>
+        <span class="description-bedrooms text-secondary flex-item"><span class="text-bold">3</span> Bedrooms</span>
+        <span class="description-bathrooms text-secondary flex-item"><span class="text-bold">3</span> Bathrooms</span>
+        <span class="description-area text-secondary flex-item"><span class="text-bold">3,766</span> Sq. Ft.</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="kawahvillas-villa-booking">
+    <div class="flex flex-column">
+      <h3 class="text-primary flex-item">Book your trip</h3>
+      <p class="text-secondary flex-item">Select your check-in and check-out dates</p>
+      <div id="kawahvillas-villa-calendar"></div>
+      <p class="text-secondary flex-item">Interested on this villa?</p>
+      <a href="auth.html" class="button button-primary-negative text-bold flex-item">Book Request Now</a>
+    </div>
+  </section>
+
+  <section id="kawahvillas-villa-tabs">
+    <ul class="grid" data-tabs>
+      <li class="tab-overview grid-item"><a data-tabby-default href="#kawahvillas-villa-overview" class="text-secondary link">Overview</a></li>
+      <li class="tab-features grid-item"><a href="#kawahvillas-villa-features" class="text-secondary link">Features</a></li>
+      <li class="tab-location grid-item"><a href="#kawahvillas-villa-location" class="text-secondary link">Location</a></li>
+    </ul>
+  </section>
+
+  <section id="kawahvillas-villa-overview" class="grid-item">
+    <h3 class="text-primary flex-item">Overview</h3>
+    <ul class="fa-ul flex-item flex flex-column">
+      <li class="text-secondary flex-item">
+        <span class="fa-li"><i class="fas fa-check"></i></span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing eli.
+      </li>
+      <li class="text-secondary flex-item">
+        <span class="fa-li"><i class="fas fa-check"></i></span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing eli liquam nec erat ut consectetur adipiscin.
+      </li>
+      <li class="text-secondary flex-item">
+        <span class="fa-li"><i class="fas fa-check"></i></span>
+        Dor sit amet, consectetur adipiscing tut consectetur.
+      </li>
+      <li class="text-secondary flex-item">
+        <span class="fa-li"><i class="fas fa-check"></i></span>
+        Consectetur adipiscing eli liquam nec erat ut ipsum dolor sit.
+      </li>
+    </ul>
+  </section>
+
+  <section id="kawahvillas-villa-features" class="grid-item">
+    <h3 class="text-primary flex-item">Features and Amenities</h3>
+    <ul class="fa-ul flex-item flex flex-column">
+      <li class="text-secondary flex-item">
+        <span class="fa-li"><i class="fas fa-check"></i></span>
+        Swimming Pool
+      </li>
+      <li class="text-secondary flex-item">
+        <span class="fa-li"><i class="fas fa-check"></i></span>
+        Free Wi-Fi
+      </li>
+      <li class="text-secondary flex-item">
+        <span class="fa-li"><i class="fas fa-check"></i></span>
+        Electronic Safe
+      </li>
+      <li class="text-secondary flex-item">
+        <span class="fa-li"><i class="fas fa-check"></i></span>
+        Private Garden
+      </li>
+      <li class="text-secondary flex-item">
+        <span class="fa-li"><i class="fas fa-check"></i></span>
+        Mini Bar
+      </li>
+      <li class="text-secondary flex-item">
+        <span class="fa-li"><i class="fas fa-check"></i></span>
+        Smart TV with Satélite Channels
+      </li>
+      <li class="text-secondary flex-item">
+        <span class="fa-li"><i class="fas fa-check"></i></span>
+        Air Conditioning
+      </li>
+      <li class="text-secondary flex-item">
+        <span class="fa-li"><i class="fas fa-check"></i></span>
+        Dinning Area (Some Villas)
+      </li>
+      <li class="text-secondary flex-item">
+        <span class="fa-li"><i class="fas fa-check"></i></span>
+        Free Coffee & Tea Capsules
+      </li>
+      <li class="text-secondary flex-item">
+        <span class="fa-li"><i class="fas fa-check"></i></span>
+        Free Toiletries
+      </li>
+      <li class="text-secondary flex-item">
+        <span class="fa-li"><i class="fas fa-check"></i></span>
+        Free Water Bottles
+      </li>
+      <li class="text-secondary flex-item">
+        <span class="fa-li"><i class="fas fa-check"></i></span>
+        Sun Terrace
+      </li>
+      <li class="text-secondary flex-item">
+        <span class="fa-li"><i class="fas fa-check"></i></span>
+        Sun Beds
+      </li>
+      <li class="text-secondary flex-item">
+        <span class="fa-li"><i class="fas fa-check"></i></span>
+        Private Pools (Some Villas)
+      </li>
+      <li class="text-secondary flex-item">
+        <span class="fa-li"><i class="fas fa-check"></i></span>
+        Non-Smoking Rooms
+      </li>
+      <li class="text-secondary flex-item">
+        <span class="fa-li"><i class="fas fa-check"></i></span>
+        Premium Comfort Bedding
+      </li>
+    </ul>
+
+    <h3 class="text-primary flex-item">Bedding</h3>
+    <ul class="fa-ul flex-item flex flex-column">
+      <li class="text-secondary flex-item">
+        <span class="fa-li"><i class="fas fa-check"></i></span>
+        Master Bedroom: King
+      </li>
+      <li class="text-secondary flex-item">
+        <span class="fa-li"><i class="fas fa-check"></i></span>
+        Bedroom 2: King
+      </li>
+      <li class="text-secondary flex-item">
+        <span class="fa-li"><i class="fas fa-check"></i></span>
+        Bedroom 3: King
+      </li>
+      <li class="text-secondary flex-item">
+        <span class="fa-li"><i class="fas fa-check"></i></span>
+        Bedroom 4: King
+      </li>
+    </ul>
+  </section>
+
+  <section id="kawahvillas-villa-location" class="grid-item">
+    <h3 class="text-primary flex-item">Map & Location</h3>
+    <p class="text-secondary flex-item">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+      hendrerit felis vitae ante tempus, vitae placerat ipsum elementum.
+      Cras est velit, luctus at ultrices sit amet, faucibus non nulla. Donec ut
+      cursus magna, sit amet accumsan purus.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <div id="footer-area" class="grid">
+    <div class="logo flex flex-row">
+      <a href="index.html">
+        <img src="img/logo/kawahvillas_logo_negative.svg" alt="Kawahvillas - Luxury Traveling" class="logo">
+      </a>
+    </div>
+    <div class="navigation">
+      <h4 class="text-primary">Company</h4>
+      <ul>
+        <li class="text-support"><a href="our-villas.html">Our Villas</a></li>
+        <li class="text-support"><a href="memberships.html">Memberships</a></li>
+        <li class="text-support"><a href="about-us.html">About Us</a></li>
+        <li class="text-support"><a href="#">Gallery</a></li>
+      </ul>
+    </div>
+    <div class="company">
+      <h4 class="text-primary">Help</h4>
+      <ul>
+        <li class="text-support"><a href="#">Contact Us</a></li>
+        <li class="text-support"><a href="#">Privacy Policy</a></li>
+        <li class="text-support"><a href="#">Legal Notices</a></li>
+        <li class="text-support"><a href="#">Terms & Conditions</a></li>
+        <li class="text-support"><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="help">
+      <h4 class="text-primary">Travel</h4>
+      <ul>
+        <li class="text-support"><a href="memberships.html">Memberships</a></li>
+        <li class="text-support"><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+    <div class="follow-us">
+      <h4 class="text-primary">Follow Us</h4>
+      <ul class="flex flex-row">
+        <li>
+          <a href="https://www.facebook.com/KawahVillas" title="Facebook" class="text-support">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/kawahvillas" title="Instagram" class="text-support">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <span class="line-border"></span>
+  </div>
+
+  <div id="footer-copyright" class="grid">
+    <div class="content flex flex-row">
+      <span class="text-support">&copy; 2021 Kawahvillas. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tabby/12.0.3/js/tabby.min.js"></script>
+<script src="https://cdn.dhtmlx.com/calendar/edge/calendar.js"></script>
+
+<script src="js/utilities/navbar.js"></script>
+<script src="js/utilities/carousel.js"></script>
+<script src="js/utilities/tabs.js"></script>
+<script src="js/utilities/calendar.js"></script>
+
+<script src="js/villa.js"></script>
+
+</body>
+
+</html>

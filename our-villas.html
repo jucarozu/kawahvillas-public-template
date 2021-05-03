@@ -14,39 +14,56 @@
   <title>Our Villas - Kawahvillas</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.dhtmlx.com/edge/dhtmlx.css">
+  <link rel="stylesheet" href="https://cdn.dhtmlx.com/calendar/edge/calendar.css">
 
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/utilities/navbar.css" />
+  <link rel="stylesheet" href="css/utilities/calendar.css">
 </head>
 
 <body>
 
 <header>
-  <nav id="navbar" class="grid">
+  <section class="wrapper grid">
     <a href="index.html" title="Kawahvillas - Luxury Travelling" class="logo link grid-item">
       <img src="img/logo/kawahvillas_logo_positive.svg" alt="Kawahvillas - Luxury Travelling" />
     </a>
-    <ul class="menu menu-primary grid-item flex flex-row">
-      <li><a href="our-villas.html" class="link">Our Villas</a></li>
-      <li class="dropdown">
-        <a href="memberships.html" class="link dropdown-button">
-          Memberships <i class="fas fa-chevron-down"></i>
-        </a>
-        <ul class="dropdown-content">
-          <li><a href="single-membership.html" class="link">Single Membership</a></li>
-          <li><a href="duo-membership.html" class="link">Duo Membership</a></li>
-          <li><a href="group-membership.html" class="link">Group Membership</a></li>
-        </ul>
-      </li>
-      <li><a href="blog.html" class="link">Blog</a></li>
-      <li><a href="about-us.html" class="link">About Us</a></li>
-      <li><a href="contact-us.html" class="link">Contact Us</a></li>
-    </ul>
-    <ul class="menu menu-secondary grid-item flex flex-row">
-      <li><a href="auth.html" class="link">SIGN IN</a></li>
-      <li><a href="get-started.html" class="button button-primary-positive">Get Started</a></li>
-    </ul>
-  </nav>
+
+    <button type="button" class="opened-menu grid-item">
+      <i class="fas fa-bars text-primary"></i>
+    </button>
+
+    <div class="overlay"></div>
+
+    <nav class="navbar grid-item grid">
+      <button type="button" class="closed-menu">
+        <i class="fas fa-times closed-icon"></i>
+      </button>
+
+      <ul class="menu menu-primary">
+        <li class="menu-item"><a href="our-villas.html" class="link text-secondary">Our Villas</a></li>
+        <li class="menu-item menu-item-has-children link text-secondary">
+          <a href="memberships.html" class="link text-secondary">
+            Memberships <i class="fas fa-chevron-down link text-secondary"></i>
+          </a>
+          <i class="fas fa-chevron-down" data-toggle="sub-menu"></i>
+          <ul class="sub-menu dropdown-content">
+            <li class="menu-item"><a href="single-membership.html" class="link text-secondary">Single Membership</a></li>
+            <li class="menu-item"><a href="duo-membership.html" class="link text-secondary">Duo Membership</a></li>
+            <li class="menu-item"><a href="group-membership.html" class="link text-secondary">Group Membership</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="blog.html" class="link text-secondary">Blog</a></li>
+        <li class="menu-item"><a href="about-us.html" class="link text-secondary">About Us</a></li>
+        <li class="menu-item"><a href="contact-us.html" class="link text-secondary">Contact Us</a></li>
+      </ul>
+
+      <ul class="menu menu-secondary">
+        <li class="menu-item"><a href="auth.html" class="link text-secondary">SIGN IN</a></li>
+        <li class="menu-item"><a href="get-started.html" class="button button-primary-positive">Get Started</a></li>
+      </ul>
+    </nav>
+  </section>
 </header>
 
 <link rel="stylesheet" href="css/our-villas.css">
@@ -61,9 +78,9 @@
   <section id="kawahvillas-search-filters">
     <form id="form-search-filters" action="" method="post">
       <div class="grid">
-        <input type="text" class="search-location" name="search-location" value="" placeholder="Search Location" />
-        <input type="date" class="search-checkin" name="search-checkin" value="" placeholder="Check-In Date" />
-        <input type="date" class="search-checkout" name="search-checkout" value="" placeholder="Check-Out Date" />
+        <input type="text" class="input-autocomplete search-location" id="search-location" name="search-location" value="" placeholder="Search Location" />
+        <input type="text" class="input-date search-checkin" id="search-checkin" name="search-checkin" value="" placeholder="Check-In Date" readonly />
+        <input type="text" class="input-date search-checkout" id="search-checkout" name="search-checkout" value="" placeholder="Check-Out Date" readonly />
       </div>
     </form>
   </section>
@@ -71,13 +88,17 @@
   <section id="kawahvillas-search-villas" class="section-spacing">
     <div class="grid">
       <div class="content grid-item flex flex-column">
-        <img class="result-image flex-item" src="img/img_59.jpg" alt="Access to our villas around the world">
+        <img class="result-image flex-item" src="img//villas/villa_vista_del_caribe/img_1.jpg" alt="Access to our villas around the world">
         <div class="result-text flex-item flex flex-column">
-          <h2 class="result-villa text-primary flex-item">Villa Summerhill</h2>
-          <span id="result-location" class="result-location text-secondary">Cabarete, Dominican Republic</span>
-          <div class="result-amenities flex-item flex flex-row">
-            <span class="result-guests text-secondary flex-item"><span class="text-bold">8</span> Guests</span>
-            <span class="result-bedrooms text-secondary flex-item"><span class="text-bold">5</span> Bedrooms</span>
+          <a href="villa.html"><h2 class="result-villa text-primary flex-item">Villa Vista del Caribe</h2></a>
+          <span id="result-location" class="result-location text-secondary flex-item">Cabarete, Dominican Republic</span>
+          <div class="result-amenities flex-item grid">
+            <span class="result-guests text-secondary"><span class="text-bold">6</span> Guests</span>
+            <span class="result-bedrooms text-secondary"><span class="text-bold">3</span> Bedrooms</span>
+          </div>
+          <div class="result-amenities flex-item grid">
+            <span class="result-bathrooms text-secondary"><span class="text-bold">3</span> Bathrooms</span>
+            <span class="result-area text-secondary"><span class="text-bold">3,766</span> Sq. Ft.</span>
           </div>
         </div>
       </div>
@@ -143,7 +164,13 @@
   </div>
 </footer>
 
-<script type="text/javascript" src="https://cdn.dhtmlx.com/edge/dhtmlx.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.dhtmlx.com/calendar/edge/calendar.js"></script>
+
+<script src="js/utilities/navbar.js"></script>
+<script src="js/utilities/calendar.js"></script>
+
+<script src="js/our-villas.js"></script>
 
 </body>
 

@@ -1,0 +1,15 @@
+.dhx_calendar__days .dhx_calendar-day--weekend {
+  color: var(--secondary);
+}
+
+.dhx_calendar__days .dhx_calendar-day--selected {
+  color: var(--support);
+}
+
+.dhx_calendar__days .dhx_calendar-day--selected::before {
+  background-color: var(--secondary);
+}
+
+.dhx_calendar__days .dhx_calendar-day--in-range::after {
+  background-color: var(--primary);
+}
