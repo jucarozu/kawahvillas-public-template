@@ -31,6 +31,8 @@
 }
 
 #kawahvillas-villa-description .description-text .description-amenities {
+  flex-wrap: wrap;
+  column-gap: 1em;
   justify-content: space-between;
   font-size: 1.25em;
 }
