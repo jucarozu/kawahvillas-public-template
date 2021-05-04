@@ -8,13 +8,13 @@
   grid-column: 2 / span 10;
   align-items: stretch;
   justify-content: flex-end;
-  padding: 0 5.5em 5.5em 2em;
   min-height: 150vmin;
+  padding: 0 4em 4em 2em;
+  box-shadow: inset 0 -20em 10em -10em var(--secondary);
   background-image: url("../img/img_5.jpg");
   background-repeat: no-repeat;
   background-position: 60% 40%;
   background-size: cover;
-  box-shadow: inset 0 -20em 10em -10em var(--secondary);
 }
 
 #kawahvillas-help {
@@ -73,10 +73,10 @@
 }
 
 #kawahvillas-memberships-secondary {
+  padding: 5em 0;
   background-image: url("../img/img_31.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 5em 0;
 }
 
 #kawahvillas-memberships-secondary .grid {
@@ -92,10 +92,10 @@
 }
 
 #kawahvillas-memberships-secondary .card-membership {
-  background-color: var(--support);
-  margin: 3em 0;
-  padding: 1em 2em 3em 2em;
   text-align: center;
+  padding: 1em 2em 3em 2em;
+  margin: 3em 0;
+  background-color: var(--support);
 }
 
 #kawahvillas-memberships-secondary .card-membership h3 {
@@ -124,9 +124,9 @@
 }
 
 #kawahvillas-memberships-secondary .card-membership ul li {
+  text-align: left;
   line-height: 1.5em;
   padding: 0.8em 0;
-  text-align: left;
 }
 
 #kawahvillas-memberships-secondary .card-membership ul li .fa-check {
@@ -173,8 +173,8 @@
 }
 
 #kawahvillas-faq-help .line-border {
-  border-bottom: 1px solid var(--primary);
   margin: 2em 0;
+  border-bottom: 1px solid var(--primary);
 }
 
 #kawahvillas-faq-help .tabs {
@@ -185,8 +185,8 @@
 
 #kawahvillas-faq-help .tabs .tab {
   justify-content: flex-start;
-  overflow: hidden;
   width: 100%;
+  overflow: hidden;
 }
 
 #kawahvillas-faq-help .tabs .tab .tab-radio {
@@ -197,17 +197,17 @@
 
 #kawahvillas-faq-help .tabs .tab .tab-label {
   font-size: 1.4em;
-  cursor: pointer;
   padding: 1em 0;
+  cursor: pointer;
 }
 
 #kawahvillas-faq-help .tabs .tab .tab-label::before {
   content: "\276F";
-  color: var(--secondary);
-  padding: 0 1em;
+  text-align: center;
   height: 1em;
   width: 1em;
-  text-align: center;
+  padding: 0 1em;
+  color: var(--secondary);
   transition: all .35s;
 }
 
@@ -248,13 +248,13 @@
 }
 
 #kawahvillas-explore-villas .content h2 {
-  font-size: 1.4em;
   text-align: center;
+  font-size: 1.4em;
 }
 
 #kawahvillas-explore-villas .content h3 {
-  padding: 1em 2em;
   text-align: center;
+  padding: 1em 2em;
 }
 
 /* #endregion */
@@ -287,6 +287,20 @@
 
 /* #endregion */
 
+/* #region Large Tablet Styles */
+
+@media screen and (min-width: 800px) {
+  #banner .content {
+    min-height: 105vmin;
+  }
+
+  #kawahvillas-explore-villas .content {
+    min-height: 105vmin;
+  }
+}
+
+/* #endregion */
+
 /* #region Mini Laptop Styles */
 
 @media screen and (min-width: 1024px) {
@@ -295,8 +309,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0;    
-    min-height: 105vmin;
+    min-height: 90vmin;
+    padding: 0;
     box-shadow: none;
   }
 
@@ -396,7 +410,7 @@
   
   #kawahvillas-explore-villas .content {
     grid-column: 19 / span 144;
-    min-height: 105vmin;
+    min-height: 90vmin;
   }
   
   #kawahvillas-explore-villas .content h3 {
@@ -410,11 +424,11 @@
 
 @media screen and (min-width: 1200px) {
   #banner .content {
-    min-height: 90vmin;
+    min-height: 75vmin;
   }
   
   #kawahvillas-explore-villas .content {
-    min-height: 90vmin;
+    min-height: 75vmin;
   }
 }
 
@@ -424,11 +438,11 @@
 
 @media screen and (min-width: 1440px) {
   #banner .content { 
-    min-height: 75vmin;
+    min-height: 60vmin;
   }
   
   #kawahvillas-explore-villas .content {
-    min-height: 75vmin;
+    min-height: 60vmin;
   }
 }
 
@@ -438,11 +452,11 @@
 
 @media screen and (min-width: 1680px) {
   #banner .content { 
-    min-height: 60vmin;
+    min-height: 45vmin;
   }
   
   #kawahvillas-explore-villas .content {
-    min-height: 60vmin;
+    min-height: 45vmin;
   }
 }
 
@@ -452,11 +466,11 @@
 
 @media screen and (min-width: 1920px) {
   #banner .content { 
-    min-height: 45vmin;
+    min-height: 30vmin;
   }
   
   #kawahvillas-explore-villas .content {
-    min-height: 45vmin;
+    min-height: 30vmin;
   }
 }
 
@@ -466,11 +480,11 @@
 
 @media screen and (min-width: 2240px) {
   #banner .content {
-    min-height: 30vmin;
+    min-height: 15vmin;
   }
 
   #kawahvillas-explore-villas .content {
-    min-height: 30vmin;
+    min-height: 15vmin;
   }
 }
 

@@ -8,13 +8,13 @@
   grid-column: 2 / span 10;
   align-items: stretch;
   justify-content: flex-end;
-  padding: 0 5.5em 5.5em 2em;
   min-height: 150vmin;
+  padding: 0 4em 4em 2em;
+  box-shadow: inset 0 -20em 10em -10em var(--secondary);
   background-image: url("../img/img_6.jpg");
   background-repeat: no-repeat;
   background-position: 50% 40%;
   background-size: cover;
-  box-shadow: inset 0 -20em 10em -10em var(--secondary);
 }
 
 #kawahvillas-exploration {
@@ -46,8 +46,8 @@
 #kawahvillas-exploration .line-border {
   grid-column: 3 / span 8;
   grid-row: 5 / 6;
-  border-bottom: 1px solid var(--primary);
   margin: 0 0 2em 0;
+  border-bottom: 1px solid var(--primary);
 }
 
 #kawahvillas-memberships-primary {
@@ -62,11 +62,11 @@
 }
 
 #kawahvillas-memberships-primary .card-membership {
-  background-color: var(--support);
-  border: 1px solid var(--primary);
-  margin: 2em 0;
-  padding: 1em 2em 3em 2em;
   text-align: center;
+  padding: 1em 2em 3em 2em;
+  margin: 2em 0;
+  border: 1px solid var(--primary);
+  background-color: var(--support);
 }
 
 #kawahvillas-memberships-primary .card-membership h3 {
@@ -135,8 +135,8 @@
 }
 
 #kawahvillas-faq .line-border {
-  border-bottom: 1px solid var(--primary);
   margin: 2em 0;
+  border-bottom: 1px solid var(--primary);
 }
 
 #kawahvillas-faq .tabs {
@@ -147,8 +147,8 @@
 
 #kawahvillas-faq .tabs .tab {
   justify-content: flex-start;
-  overflow: hidden;
   width: 100%;
+  overflow: hidden;
 }
 
 #kawahvillas-faq .tabs .tab .tab-radio {
@@ -159,17 +159,17 @@
 
 #kawahvillas-faq .tabs .tab .tab-label {
   font-size: 1.4em;
-  cursor: pointer;
   padding: 1em 0;
+  cursor: pointer;
 }
 
 #kawahvillas-faq .tabs .tab .tab-label::before {
   content: "\276F";
-  color: var(--primary);
-  padding: 0 1em;
+  text-align: center;
   height: 1em;
   width: 1em;
-  text-align: center;
+  padding: 0 1em;
+  color: var(--primary);
   transition: all .35s;
 }
 
@@ -218,8 +218,8 @@
 #kawahvillas-destinations .card-location {
   align-items: stretch;
   justify-content: flex-end;
-  margin: 2em 0;
   min-height: 75vmin;
+  margin: 2em 0;
   box-shadow: inset 0 -15em 10em -10em var(--secondary);
 }
 
@@ -289,6 +289,16 @@
 
 /* #endregion */
 
+/* #region Large Tablet Styles */
+
+@media screen and (min-width: 800px) {
+  #banner .content {
+    min-height: 105vmin;
+  }
+}
+
+/* #endregion */
+
 /* #region Mini Laptop Styles */
 
 @media screen and (min-width: 1024px) {
@@ -296,8 +306,8 @@
     grid-column: 13 / span 156;
     align-items: center;
     justify-content: center;
-    padding: 0;    
-    min-height: 105vmin;
+    min-height: 90vmin;
+    padding: 0;
     box-shadow: none;
   }
   
@@ -417,7 +427,7 @@
 
 @media screen and (min-width: 1200px) {
   #banner .content {
-    min-height: 90vmin;
+    min-height: 75vmin;
   }
 }
 
@@ -427,7 +437,7 @@
 
 @media screen and (min-width: 1440px) {
   #banner .content { 
-    min-height: 75vmin;
+    min-height: 60vmin;
   }
 }
 
@@ -437,7 +447,7 @@
 
 @media screen and (min-width: 1680px) {
   #banner .content { 
-    min-height: 60vmin;
+    min-height: 45vmin;
   }
 }
 
@@ -447,7 +457,7 @@
 
 @media screen and (min-width: 1920px) {
   #banner .content { 
-    min-height: 45vmin;
+    min-height: 30vmin;
   }
 }
 
@@ -457,7 +467,7 @@
 
 @media screen and (min-width: 2240px) {
   #banner .content {
-    min-height: 30vmin;
+    min-height: 15vmin;
   }
 }
 

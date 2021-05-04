@@ -195,7 +195,7 @@ h3 {
 }
 
 h4 {
-  font-size: 2em;
+  font-size: 1.6em;
 }
 
 h5 {
@@ -219,7 +219,7 @@ body {
 }
 
 p, li {
-  font-size: 1rem;
+  font-size: 0.75rem;
 }
 
 label, a, span {
@@ -365,7 +365,7 @@ footer {
   }
 
   p, li {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .grid {

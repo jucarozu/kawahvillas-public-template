@@ -8,13 +8,13 @@
   grid-column: 2 / span 10;
   align-items: stretch;
   justify-content: flex-end;
-  padding: 0 5.5em 5.5em 2em;
   min-height: 150vmin;
+  padding: 0 4em 4em 2em;
+  box-shadow: inset 0 -20em 10em -10em var(--secondary);
   background-image: url("../img/img_4.jpg");
   background-repeat: no-repeat;
   background-position: 45% 50%;
   background-size: cover;
-  box-shadow: inset 0 -20em 10em -10em var(--secondary);
 }
 
 #kawahvillas-access {
@@ -25,9 +25,9 @@
 #kawahvillas-access .line-border {
   grid-column: 3 / span 8;
   grid-row: 1 / 2;
-  border-bottom: 1px solid var(--primary);
-  margin: 0 0 2em 0;
   width: 6em;
+  margin: 0 0 2em 0;
+  border-bottom: 1px solid var(--primary);
 }
 
 #kawahvillas-access h2 {
@@ -53,9 +53,9 @@
 #kawahvillas-trip .line-border {
   grid-column: 3 / span 8;
   grid-row: 1 / 2;
-  border-bottom: 1px solid var(--primary);
-  margin: 0 0 2em 0;
   width: 6em;
+  margin: 0 0 2em 0;
+  border-bottom: 1px solid var(--primary);
 }
 
 #kawahvillas-trip h2 {
@@ -81,9 +81,9 @@
 #kawahvillas-guest .line-border {
   grid-column: 3 / span 8;
   grid-row: 1 / 2;
-  border-bottom: 1px solid var(--primary);
-  margin: 0 0 2em 0;
   width: 6em;
+  margin: 0 0 2em 0;
+  border-bottom: 1px solid var(--primary);
 }
 
 #kawahvillas-guest h2 {
@@ -109,9 +109,9 @@
 #kawahvillas-nocontract .line-border {
   grid-column: 3 / span 8;
   grid-row: 1 / 2;
-  border-bottom: 1px solid var(--primary);
-  margin: 0 0 2em 0;
   width: 6em;
+  margin: 0 0 2em 0;
+  border-bottom: 1px solid var(--primary);
 }
 
 #kawahvillas-nocontract h2 {
@@ -149,18 +149,18 @@
 }
 
 #kawahvillas-group-membership {
+  padding: 5em 0;
   background-image: url("../img/img_30.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 5em 0;
 }
 
 #kawahvillas-group-membership .card-group-membership {
   grid-column: 3 / span 8;
-  background-color: var(--support);
-  margin: 2em 0;
-  padding: 1em 2em 3em 2em;
   text-align: center;
+  padding: 1em 2em 3em 2em;
+  margin: 2em 0;
+  background-color: var(--support);
 }
 
 #kawahvillas-group-membership .card-group-membership h3 {
@@ -220,6 +220,16 @@
 
 /* #endregion */
 
+/* #region Large Tablet Styles */
+
+@media screen and (min-width: 800px) {
+  #banner .content {
+    min-height: 105vmin;
+  }
+}
+
+/* #endregion */
+
 /* #region Mini Laptop Styles */
 
 @media screen and (min-width: 1024px) {
@@ -227,8 +237,8 @@
     grid-column: 13 / span 156;
     align-items: center;
     justify-content: center;
-    padding: 0;    
-    min-height: 105vmin;
+    min-height: 90vmin;
+    padding: 0;
     box-shadow: none;
   }
   
@@ -350,7 +360,7 @@
 
 @media screen and (min-width: 1200px) {
   #banner .content {
-    min-height: 90vmin;
+    min-height: 75vmin;
   }
 }
 
@@ -360,7 +370,7 @@
 
 @media screen and (min-width: 1440px) {
   #banner .content { 
-    min-height: 75vmin;
+    min-height: 60vmin;
   }
 }
 
@@ -370,7 +380,7 @@
 
 @media screen and (min-width: 1680px) {
   #banner .content { 
-    min-height: 60vmin;
+    min-height: 45vmin;
   }
 }
 
@@ -380,7 +390,7 @@
 
 @media screen and (min-width: 1920px) {
   #banner .content {
-    min-height: 45vmin;
+    min-height: 30vmin;
   }
 }
 
@@ -390,7 +400,7 @@
 
 @media screen and (min-width: 2240px) {
   #banner .content {
-    min-height: 30vmin;
+    min-height: 15vmin;
   }
 }
 

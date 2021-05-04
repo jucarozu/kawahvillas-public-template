@@ -14,9 +14,9 @@
 }
 
 #kawahvillas-search-filters input {
-  border: 1px solid var(--secondary);
-  margin: 0.5em 0;
   padding: 1em;
+  margin: 0.5em 0;
+  border: 1px solid var(--secondary);
 }
 
 #kawahvillas-search-filters .search-location {
@@ -38,9 +38,9 @@
 
 #kawahvillas-search-villas .content {
   grid-column: 2 / span 10;
-  background-color: var(--support);
-  border: 1px solid var(--secondary);
   padding: 1em 2em;
+  border: 1px solid var(--secondary);
+  background-color: var(--support);
 }
 
 #kawahvillas-search-villas .content .result-text .result-villa {
@@ -102,13 +102,13 @@
   }
 
   #kawahvillas-search-villas .content .result-image {
-    padding-right: 2em;
     width: 50%;
+    padding-right: 2em;
   }
 
   #kawahvillas-search-villas .content .result-text {
-    padding-left: 2em;
     width: 50%;
+    padding-left: 2em;
   }
 
   #kawahvillas-search-villas .content .result-text .result-guests {

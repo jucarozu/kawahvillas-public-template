@@ -3,7 +3,6 @@
 header .wrapper {
   align-items: center;
   justify-content: center;
-  max-width: 100%;
   height: auto;
   padding: 2rem 0;
 }
@@ -18,8 +17,8 @@ header .wrapper .opened-menu {
 
 header .wrapper .navbar {
   position: relative;
-  max-width: 100%;
   height: auto;
+  margin: 0;
 }
 
 header .wrapper .navbar .menu {
@@ -164,7 +163,7 @@ header .wrapper .overlay {
   }
 
   header .wrapper .navbar i {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   header .wrapper .navbar .menu {

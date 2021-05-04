@@ -43,9 +43,9 @@
 
 #kawahvillas-contact-help .card-help {
   background-color: var(--secondary);
-  margin: 3em 0;
-  padding: 1em 2em 3em 2em;
   min-height: 75vmin;
+  padding: 1em 2em 3em 2em;
+  margin: 3em 0;
   border-radius: 2em;
 }
 
@@ -85,9 +85,9 @@
 }
 
 #kawahvillas-contact-form input {
-  border: 1px solid var(--secondary);
-  margin: 0.5em 0;
   padding: 1em;
+  margin: 0.5em 0;
+  border: 1px solid var(--secondary);
 }
 
 #kawahvillas-contact-form .contact-name {
