@@ -65,6 +65,7 @@ header .wrapper .grid .navbar .menu > .menu-item > .sub-menu {
   background: var(--support);
   transform: translateY(1rem);
   transition: all 0.35s ease;
+  z-index: 999;
 }
 
 header .wrapper .grid .navbar .menu > .menu-item > .sub-menu > .menu-item {
