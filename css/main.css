@@ -50,7 +50,7 @@ body {
 }
 
 .section-spacing {
-  margin: 4rem 0;
+  margin: 5rem 0;
 }
 
 .grid {
@@ -58,7 +58,7 @@ body {
 }
 
 .grid-item {
-  padding: 1em 0;
+  padding: 1rem 0;
 }
 
 .flex {
@@ -66,7 +66,7 @@ body {
 }
 
 .flex-item {
-  padding: 1em 0;
+  padding: 1rem 0;
 }
 
 .flex-row {
@@ -106,6 +106,10 @@ body {
 .border-support {
   border: 1px solid var(--support);
   padding: 0.5rem;
+}
+
+.link, .button {
+  transition: all 0.35s ease;
 }
 
 .button {
@@ -215,23 +219,35 @@ h1, h2, h3, h4, label, p, li, a, span {
 /* #region Mobile Styles */
 
 body {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 p, li {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
 }
 
 label, a, span {
   font-size: 1em;
 }
 
-.link, .button {
-  transition: all 0.35s ease;
-}
-
 .grid {
   grid-template-columns: repeat(12, 1fr);
+}
+
+.content-with-background {
+  height: 175vmin;
+}
+
+.content-with-image {
+  height: 120vmin;
+}
+
+.content-with-card-text {
+  height: 120vmin;
+}
+
+.content-with-card-image {
+  height: 105vmin;
 }
 
 header {
@@ -331,7 +347,11 @@ footer {
 
 @media screen and (min-width: 460px) {
   body {
-    font-size: 12px;
+    font-size: 14px;
+  }
+
+  .content-with-background {
+    height: 150vmin;
   }
 }
 
@@ -343,6 +363,18 @@ footer {
   body {
     font-size: 16px;
   }
+
+  p, li {
+    font-size: 1.2rem;
+  }
+
+  .content-with-background {
+    height: 135vmin;
+  }
+
+  .content-with-card-text {
+    height: 105vmin;
+  }
 }
 
 /* #endregion */
@@ -351,13 +383,17 @@ footer {
 
 @media screen and (min-width: 800px) {
   body {
-    font-size: 14px;
+    font-size: 18px;
+  }
+
+  .content-with-background {
+    height: 120vmin;
   }
 }
 
 /* #endregion */
 
-/* #region Mini Laptop Styles */
+/* #region Laptop Styles */
 
 @media screen and (min-width: 1024px) {
   body {
@@ -370,6 +406,22 @@ footer {
 
   .grid {
     grid-template-columns: repeat(180, 1fr);
+  }
+
+  .content-with-background {
+    height: 105vmin;
+  }
+
+  .content-with-image {
+    height: 90vmin;
+  }
+
+  .content-with-card-text {
+    height: 90vmin;
+  }
+
+  .content-with-card-image {
+    height: 75vmin;
   }
   
   #footer-area {
@@ -427,15 +479,15 @@ footer {
 
 /* #endregion */
 
-/* #region Laptop Styles */
+/* #region Large Laptop Styles */
 
 @media screen and (min-width: 1200px) {
   body {
     font-size: 14px;
   }
 
-  #navbar a.button {
-    padding: 0.75em 1.5em;
+  .content-with-background {
+    height: 90vmin;
   }
 }
 
@@ -448,13 +500,25 @@ footer {
     font-size: 16px;
   }
 
-  .grid {
-    margin: 0 auto;
-    max-width: 1440px;
+  p, li {
+    font-size: 1.4rem;
   }
 
-  .grid-spacing {
-    margin: 4em auto;
+  header > section > .grid,
+  main > section > .grid,
+  main > form > .grid,
+  footer > section > .grid {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .content-with-background {
+    height: 75vmin;
+  }
+
+  .content-with-card-text {
+    height: 75vmin;
   }
 }
 
@@ -462,29 +526,35 @@ footer {
 
 /* #region Large Desktop Styles */
 
-@media screen and (min-width: 1680px) {
+@media screen and (min-width: 1960px) {
   body {
     font-size: 18px;
+  }
+
+  .content-with-background {
+    height: 60vmin;
+  }
+
+  .content-with-card-text {
+    height: 60vmin;
   }
 }
 
 /* #endregion */
 
-/* #region Extra Desktop Styles */
-
-@media screen and (min-width: 1920px) {
-  body {
-    font-size: 18px;
-  }
-}
-
-/* #endregion */
-
-/* #region Full Desktop Styles */
+/* #region Extra Styles */
 
 @media screen and (min-width: 2240px) {
   body {
     font-size: 18px;
+  }
+
+  .content-with-background {
+    height: 45vmin;
+  }
+
+  .content-with-card-text {
+    height: 45vmin;
   }
 }
 

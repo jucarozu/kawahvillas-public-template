@@ -1,14 +1,13 @@
 /* #region Mobile Styles */
 
-#banner {
+#kawahvillas-banner {
   background-color: var(--support);
 }
 
-#banner .content {
+#kawahvillas-banner .content {
   grid-column: 2 / span 10;
   align-items: stretch;
   justify-content: flex-end;
-  min-height: 150vmin;
   padding: 0 4em 4em 2em;
   box-shadow: inset 0 -20em 10em -10em var(--secondary);
   background-image: url("../img/img_1.jpg");
@@ -17,7 +16,7 @@
   background-size: cover;
 }
 
-#banner .content h1 {
+#kawahvillas-banner .content h1 {
   padding: 0.25em 0;
 }
 
@@ -180,7 +179,6 @@
   grid-column: 2 / span 10;
   align-items: center;
   justify-content: center;
-  min-height: 150vmin;
   background-image: url("../img/img_15.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -199,56 +197,13 @@
 
 /* #endregion */
 
-/* #region Large Mobile Styles */
-
-@media screen and (min-width: 460px) {
-  #banner .content {
-    min-height: 135vmin;
-  }
-  
-  #kawahvillas-pass .content {
-    min-height: 135vmin;
-  }
-}
-
-/* #endregion */
-
-/* #region Tablet Styles */
-
-@media screen and (min-width: 620px) {
-  #banner .content {
-    min-height: 120vmin;
-  }
-  
-  #kawahvillas-pass .content {
-    min-height: 120vmin;
-  }
-}
-
-/* #endregion */
-
-/* #region Large Tablet Styles */
-
-@media screen and (min-width: 460px) {
-  #banner .content {
-    min-height: 105vmin;
-  }
-
-  #kawahvillas-pass .content {
-    min-height: 105vmin;
-  }
-}
-
-/* #endregion */
-
-/* #region Mini Laptop Styles */
+/* #region Laptop Styles */
 
 @media screen and (min-width: 1024px) {
-  #banner .content {
+  #kawahvillas-banner .content {
     grid-column: 13 / span 156;
     align-items: center;
     justify-content: center;
-    min-height: 90vmin;
     padding: 0;
     box-shadow: none;
   }
@@ -305,81 +260,10 @@
   
   #kawahvillas-pass .content {
     grid-column: 19 / span 144;
-    min-height: 105vmin;
   }
   
   #kawahvillas-pass .content h3 {
     padding: 1em 9em;
-  }
-}
-
-/* #endregion */
-
-/* #region Laptop Styles */
-
-@media screen and (min-width: 1200px) {
-  #banner .content {
-    min-height: 75vmin;
-  }
-  
-  #kawahvillas-pass .content {
-    min-height: 75vmin;
-  }
-}
-
-/* #endregion */
-
-/* #region Desktop Styles */
-
-@media screen and (min-width: 1440px) {
-  #banner .content {
-    min-height: 60vmin;
-  }
-  
-  #kawahvillas-pass .content {
-    min-height: 60vmin;
-  }
-}
-
-/* #endregion */
-
-/* #region Large Desktop Styles */
-
-@media screen and (min-width: 1680px) {
-  #banner .content { 
-    min-height: 45vmin;
-  }
-  
-  #kawahvillas-pass .content {
-    min-height: 45vmin;
-  }
-}
-
-/* #endregion */
-
-/* #region Extra Desktop Styles */
-
-@media screen and (min-width: 1920px) {
-  #banner .content { 
-    min-height: 30vmin;
-  }
-  
-  #kawahvillas-pass .content {
-    min-height: 30vmin;
-  }
-}
-
-/* #endregion */
-
-/* #region Full Desktop Styles */
-
-@media screen and (min-width: 2240px) {
-  #banner .content { 
-    min-height: 15vmin;
-  }
-  
-  #kawahvillas-pass .content {
-    min-height: 15vmin;
   }
 }
 

@@ -1,56 +1,56 @@
 /* #region Mobile Styles */
 
-header .wrapper {
-  align-items: center;
+header .wrapper .grid {
   justify-content: center;
   height: auto;
   padding: 2rem 0;
 }
 
-header .wrapper .logo {
+header .wrapper .grid .logo {
   grid-column: 2 / span 4;
+  outline: none;
 }
 
-header .wrapper .opened-menu {
+header .wrapper .grid .opened-menu {
   grid-column: 11 / span 1;
 }
 
-header .wrapper .navbar {
+header .wrapper .grid .navbar {
   position: relative;
   height: auto;
   margin: 0;
 }
 
-header .wrapper .navbar .menu {
+header .wrapper .grid .navbar .menu {
   grid-column: 1 / span 12;
 }
 
-header .wrapper .navbar .menu > .menu-item {
+header .wrapper .grid .navbar .menu > .menu-item {
   position: relative;
   display: inline-block;
 }
 
-header .wrapper .navbar .menu > .menu-item > a {
+header .wrapper .grid .navbar .menu > .menu-item > a {
   display: block;
 }
 
-header .wrapper .navbar .menu > .menu-item > a.link {
+header .wrapper .grid .navbar .menu > .menu-item > a.link {
   padding: 1rem 0;
 }
 
-header .wrapper .navbar .menu > .menu-item > a.button {
+header .wrapper .grid .navbar .menu > .menu-item > a.button {
   padding: 0.75em 1.5em;
 }
 
-header .wrapper .navbar .menu > .menu-item:hover > a.link {
+header .wrapper .grid .navbar .menu > .menu-item:hover > a.link {
   color: var(--primary);
 }
 
-header .wrapper .navbar .menu > .menu-item > .sub-menu > .menu-item > a:hover {
+header .wrapper .grid .navbar .menu > .menu-item > .sub-menu > .menu-item > a:hover {
   color: var(--primary);
 }
 
-header .wrapper .navbar .menu > .menu-item > .sub-menu {
+header .wrapper .grid .navbar .menu > .menu-item > .sub-menu {
   position: absolute;
   left: -1rem;
   top: 100%;
@@ -67,11 +67,11 @@ header .wrapper .navbar .menu > .menu-item > .sub-menu {
   transition: all 0.35s ease;
 }
 
-header .wrapper .navbar .menu > .menu-item > .sub-menu > .menu-item {
+header .wrapper .grid .navbar .menu > .menu-item > .sub-menu > .menu-item {
   display: block;
 }
 
-header .wrapper .navbar .menu > .menu-item > .sub-menu > .menu-item > a {
+header .wrapper .grid .navbar .menu > .menu-item > .sub-menu > .menu-item > a {
   display: block;
   padding: 0.5rem 1.25rem;
   color: var(--secondary);
@@ -80,7 +80,7 @@ header .wrapper .navbar .menu > .menu-item > .sub-menu > .menu-item > a {
   transition: all 0.35s ease;
 }
 
-header .wrapper .opened-menu {
+header .wrapper .grid .opened-menu {
   position: relative;
   display: none;
   cursor: pointer;
@@ -93,11 +93,11 @@ header .wrapper .opened-menu {
   transition: all 0.35s ease;
 }
 
-header .wrapper .opened-menu > i {
+header .wrapper .grid .opened-menu > i {
   font-size: 3em;
 }
 
-header .wrapper .closed-menu {
+header .wrapper .grid .closed-menu {
   display: none;
   align-items: center;
   justify-content: center;
@@ -109,13 +109,13 @@ header .wrapper .closed-menu {
   padding: 0;
 }
 
-header .wrapper .closed-menu i.closed-icon {
+header .wrapper .grid .closed-menu i.closed-icon {
   display: block;
   width: 1rem;
   height: auto;
 }
 
-header .wrapper .overlay {
+header .wrapper .grid .overlay {
   position: fixed;
   left: 0;
   top: 0;
@@ -129,7 +129,7 @@ header .wrapper .overlay {
 }
 
 @media only screen and (max-width: 1023px) {
-  header .wrapper .navbar {
+  header .wrapper .grid .navbar {
     position: fixed;
     top: 0;
     left: -18rem;
@@ -145,68 +145,68 @@ header .wrapper .overlay {
     transition: all 0.5s ease;
   }
 
-  header .wrapper .navbar.active {
+  header .wrapper .grid .navbar.active {
     padding: 1rem;
     left: 0;
     opacity: 1;
     visibility: visible;
   }
 
-  header .wrapper .navbar::-webkit-scrollbar {
+  header .wrapper .grid .navbar::-webkit-scrollbar {
     width: 5px;
   }
 
-  header .wrapper .navbar::-webkit-scrollbar-thumb {
+  header .wrapper .grid .navbar::-webkit-scrollbar-thumb {
     border-radius: 1rem;
     background: #e6e6e6;
     box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.12);
   }
 
-  header .wrapper .navbar i {
+  header .wrapper .grid .navbar i {
     font-size: 1rem;
   }
 
-  header .wrapper .navbar .menu {
+  header .wrapper .grid .navbar .menu {
     width: 100%;
     height: auto;
     margin-top: 3.5rem;
   }
   
-  header .wrapper .navbar .menu > .menu-item {
+  header .wrapper .grid .navbar .menu > .menu-item {
     display: block;
     margin: 0;
   }
 
-  header .wrapper .navbar .menu > .menu-item-has-children {
+  header .wrapper .grid .navbar .menu > .menu-item-has-children {
     position: relative;
   }
 
-  header .wrapper .navbar .menu > .menu-item-has-children > i {
+  header .wrapper .grid .navbar .menu > .menu-item-has-children > i {
     position: absolute;
     top: 1rem;
     right: 0;
     cursor: pointer;
   }
 
-  header .wrapper .navbar .menu > .menu-item-has-children > i:hover {
+  header .wrapper .grid .navbar .menu > .menu-item-has-children > i:hover {
     color: var(--primary);
   }
   
-  header .wrapper .navbar .menu > .menu-item-has-children > a {
+  header .wrapper .grid .navbar .menu > .menu-item-has-children > a {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  header .wrapper .navbar .menu > .menu-item-has-children > a > i {
+  header .wrapper .grid .navbar .menu > .menu-item-has-children > a > i {
     display: none;
   }
   
-  header .wrapper .navbar .menu > .menu-item > a {
+  header .wrapper .grid .navbar .menu > .menu-item > a {
     padding: 0.75rem 1rem;
   }
 
-  header .wrapper .navbar .menu > .menu-item > .sub-menu {
+  header .wrapper .grid .navbar .menu > .menu-item > .sub-menu {
     position: relative;
     top: auto;
     left: auto;
@@ -223,34 +223,34 @@ header .wrapper .overlay {
     transform: translateY(0px);
   }
 
-  header .wrapper .navbar .menu > .menu-item > .sub-menu > .menu-item > a {
+  header .wrapper .grid .navbar .menu > .menu-item > .sub-menu > .menu-item > a {
     padding: 0.75rem 2rem;
   }
 
-  header .wrapper .navbar .menu.menu-secondary {
+  header .wrapper .grid .navbar .menu.menu-secondary {
     position: absolute;
     text-align: center;
     bottom: 1rem;
   }
 
-  header .wrapper .navbar .menu.menu-secondary > .menu-item > a {
+  header .wrapper .grid .navbar .menu.menu-secondary > .menu-item > a {
     margin: 1rem 0;
   }
 
-  header .wrapper .opened-menu {
+  header .wrapper .grid .opened-menu {
     display: block;
     opacity: 1;
     visibility: visible;
   }
 
-  header .wrapper .closed-menu {
+  header .wrapper .grid .closed-menu {
     position: absolute;
     display: flex;
     top: 1rem;
     right: 1rem;
   }
 
-  header .wrapper .overlay.active {
+  header .wrapper .grid .overlay.active {
     display: block;
     opacity: 1;
     visibility: visible;
@@ -262,32 +262,36 @@ header .wrapper .overlay {
 /* #region Mini Laptop Styles */
 
 @media only screen and (min-width: 1024px) {
-  header .wrapper .logo {
+  header .wrapper .grid {
+    align-items: center;
+  }
+
+  header .wrapper .grid .logo {
     grid-column: 13 / span 24;
   }
 
-  header .wrapper .navbar {
+  header .wrapper .grid .navbar {
     grid-column: 50 / span 119;
     justify-content: space-between;
   }
 
-  header .wrapper .navbar i {
+  header .wrapper .grid .navbar i {
     font-size: 0.75em;
   }
 
-  header .wrapper .navbar .menu .menu-item {
+  header .wrapper .grid .navbar .menu .menu-item {
     font-size: 1em;
   }
 
-  header .wrapper .navbar .menu .menu-item > a {
+  header .wrapper .grid .navbar .menu .menu-item > a {
     font-size: 1em;
   }
 
-  header .wrapper .navbar .menu .menu-item > a.button {
+  header .wrapper .grid .navbar .menu .menu-item > a.button {
     padding: 0.5em 1em;
   }
 
-  header .wrapper .navbar .menu-primary {
+  header .wrapper .grid .navbar .menu-primary {
     grid-column: 1 / span 125;
     display: flex;
     flex-direction: row;
@@ -295,7 +299,7 @@ header .wrapper .overlay {
     justify-content: space-evenly;
   }
 
-  header .wrapper .navbar .menu-secondary {
+  header .wrapper .grid .navbar .menu-secondary {
     grid-column: 136 / span 45;
     display: flex;
     flex-direction: row;
@@ -303,16 +307,16 @@ header .wrapper .overlay {
     justify-content: space-between;
   }
 
-  header .wrapper .navbar .menu > .menu-item-has-children > i {
+  header .wrapper .grid .navbar .menu > .menu-item-has-children > i {
     display: none;
   }
 
-  header .wrapper .navbar .menu > .menu-item-has-children > a:hover > i,
-  header .wrapper .navbar .menu > .menu-item-has-children > a > i:hover {
+  header .wrapper .grid .navbar .menu > .menu-item-has-children > a:hover > i,
+  header .wrapper .grid .navbar .menu > .menu-item-has-children > a > i:hover {
     color: var(--primary);
   }
   
-  header .wrapper .navbar .menu > .menu-item-has-children:hover > .sub-menu {
+  header .wrapper .grid .navbar .menu > .menu-item-has-children:hover > .sub-menu {
     display: block;
     opacity: 1;
     visibility: visible;

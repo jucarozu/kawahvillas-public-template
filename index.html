@@ -1,75 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta http-equiv="Expires" content="0">
-  <meta http-equiv="Last-Modified" content="0">
-  <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-
-  <title>Kawahvillas - Discover a new way to travel</title>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/utilities/navbar.css" />
-</head>
-
-<body>
-
-<header>
-  <section class="wrapper grid">
-    <a href="index.html" title="Kawahvillas - Luxury Travelling" class="logo link grid-item">
-      <img src="img/logo/kawahvillas_logo_positive.svg" alt="Kawahvillas - Luxury Travelling" />
-    </a>
-
-    <button type="button" class="opened-menu grid-item">
-      <i class="fas fa-bars text-primary"></i>
-    </button>
-
-    <div class="overlay"></div>
-
-    <nav class="navbar grid-item grid">
-      <button type="button" class="closed-menu">
-        <i class="fas fa-times closed-icon"></i>
-      </button>
-
-      <ul class="menu menu-primary">
-        <li class="menu-item"><a href="our-villas.html" class="link text-secondary">Our Villas</a></li>
-        <li class="menu-item menu-item-has-children link text-secondary">
-          <a href="memberships.html" class="link text-secondary">
-            Memberships <i class="fas fa-chevron-down link text-secondary"></i>
-          </a>
-          <i class="fas fa-chevron-down" data-toggle="sub-menu"></i>
-          <ul class="sub-menu dropdown-content">
-            <li class="menu-item"><a href="single-membership.html" class="link text-secondary">Single Membership</a></li>
-            <li class="menu-item"><a href="duo-membership.html" class="link text-secondary">Duo Membership</a></li>
-            <li class="menu-item"><a href="group-membership.html" class="link text-secondary">Group Membership</a></li>
-          </ul>
-        </li>
-        <li class="menu-item"><a href="blog.html" class="link text-secondary">Blog</a></li>
-        <li class="menu-item"><a href="about-us.html" class="link text-secondary">About Us</a></li>
-        <li class="menu-item"><a href="contact-us.html" class="link text-secondary">Contact Us</a></li>
-      </ul>
-
-      <ul class="menu menu-secondary">
-        <li class="menu-item"><a href="auth.html" class="link text-secondary">SIGN IN</a></li>
-        <li class="menu-item"><a href="get-started.html" class="button button-primary-positive">Get Started</a></li>
-      </ul>
-    </nav>
-  </section>
-</header>
+<!--#include file="header.html" -->
 
 <link rel="stylesheet" href="css/index.css">
 
 <main>
-  <section id="banner">
+  <section id="kawahvillas-banner">
     <div class="grid">
-      <div class="content grid-item flex flex-column">
+      <div class="content content-with-background grid-item flex flex-column">
         <h1 class="text-support text-bold">Discover a new way to travel</h1>
         <h3 class="text-support">Live a luxury experience</h3>
       </div>
@@ -226,7 +162,7 @@
 
   <section id="kawahvillas-pass" class="section-spacing">
     <div class="grid">
-      <div class="content grid-item flex flex-column">
+      <div class="content content-with-background grid-item flex flex-column">
         <h2 class="text-primary flex-item">Kawahvillas Pass</h2>
         <h3 class="text-support flex-item">Discover how one subscription can create your luxury experience</h3>
         <a href="get-started.html" class="button button-primary-positive text-bold">Learn More</a>
@@ -235,68 +171,4 @@
   </section>
 </main>
 
-<footer>
-  <div id="footer-area" class="grid">
-    <div class="logo flex flex-row">
-      <a href="index.html">
-        <img src="img/logo/kawahvillas_logo_negative.svg" alt="Kawahvillas - Luxury Traveling" class="logo">
-      </a>
-    </div>
-    <div class="navigation">
-      <h4 class="text-primary">Company</h4>
-      <ul>
-        <li class="link text-support"><a href="our-villas.html">Our Villas</a></li>
-        <li class="link text-support"><a href="memberships.html">Memberships</a></li>
-        <li class="link text-support"><a href="about-us.html">About Us</a></li>
-        <li class="link text-support"><a href="#">Gallery</a></li>
-      </ul>
-    </div>
-    <div class="company">
-      <h4 class="text-primary">Help</h4>
-      <ul>
-        <li class="link text-support"><a href="#">Contact Us</a></li>
-        <li class="link text-support"><a href="#">Privacy Policy</a></li>
-        <li class="link text-support"><a href="#">Legal Notices</a></li>
-        <li class="link text-support"><a href="#">Terms & Conditions</a></li>
-        <li class="link text-support"><a href="#">FAQ</a></li>
-      </ul>
-    </div>
-    <div class="help">
-      <h4 class="text-primary">Travel</h4>
-      <ul>
-        <li class="link text-support"><a href="memberships.html">Memberships</a></li>
-        <li class="link text-support"><a href="blog.html">Blog</a></li>
-      </ul>
-    </div>
-    <div class="follow-us">
-      <h4 class="text-primary">Follow Us</h4>
-      <ul class="flex flex-row">
-        <li>
-          <a href="https://www.facebook.com/KawahVillas" title="Facebook" class="link text-support">
-            <i class="fab fa-facebook"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/kawahvillas" title="Instagram" class="link text-support">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <span class="line-border"></span>
-  </div>
-
-  <div id="footer-copyright" class="grid">
-    <div class="content flex flex-row">
-      <span class="text-support">&copy; 2021 Kawahvillas. All rights reserved.</span>
-    </div>
-  </div>
-</footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-<script src="js/utilities/navbar.js"></script>
-
-</body>
-
-</html>
+<!--#include file="footer.html" -->

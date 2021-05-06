@@ -43,7 +43,6 @@
 
 #kawahvillas-contact-help .card-help {
   background-color: var(--secondary);
-  min-height: 75vmin;
   padding: 1em 2em 3em 2em;
   margin: 3em 0;
   border-radius: 2em;
@@ -55,7 +54,6 @@
 
 #kawahvillas-contact-help .card-help span {
   font-size: 1.2em;
-  margin: auto auto 0 auto;
 }
 
 #kawahvillas-contact-help #card-help-1 {
@@ -115,7 +113,7 @@
 
 /* #endregion */
 
-/* #region Mini Laptop Styles */
+/* #region Laptop Styles */
 
 @media screen and (min-width: 1024px) {
   #kawahvillas-contact-header h1 {
@@ -131,10 +129,6 @@
   #kawahvillas-contact-help h2 {
     grid-column: 13 / span 156;
     text-align: center;
-  }
-
-  #kawahvillas-contact-help .card-help {
-    min-height: 50vmin;
   }
   
   #kawahvillas-contact-help #card-help-1 {

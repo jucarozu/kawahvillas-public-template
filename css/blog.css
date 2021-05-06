@@ -28,7 +28,6 @@
   grid-column: 2 / span 10;
   align-items: flex-start;
   justify-content: flex-end;
-  min-height: 150vmin;
   padding: 0 4em 4em 2em;
   margin: 0 0 4em 0;
   background-repeat: no-repeat;
@@ -49,37 +48,7 @@
 
 /* #endregion */
 
-/* #region Large Mobile Styles */
-
-@media screen and (min-width: 460px) {
-  #kawahvillas-blog-posts .content {
-    min-height: 135vmin;
-  }
-}
-
-/* #endregion */
-
-/* #region Tablet Styles */
-
-@media screen and (min-width: 620px) {
-  #kawahvillas-blog-posts .content {
-    min-height: 120vmin;
-  }
-}
-
-/* #endregion */
-
-/* #region Large Tablet Styles */
-
-@media screen and (min-width: 800px) {
-  #kawahvillas-blog-posts .content {
-    min-height: 105vmin;
-  }
-}
-
-/* #endregion */
-
-/* #region Mini Laptop Styles */
+/* #region Laptop Styles */
 
 @media screen and (min-width: 1024px) {
   #kawahvillas-blog-header h1 {
@@ -94,58 +63,7 @@
 
   #kawahvillas-blog-posts .content {
     grid-column: 13 / span 156;
-    min-height: 90vmin;
     padding: 0 30em 6em 2em;
-  }
-}
-
-/* #endregion */
-
-/* #region Laptop Styles */
-
-@media screen and (min-width: 1200px) {
-  #kawahvillas-blog-posts .content {
-    min-height: 75vmin;
-  }
-}
-
-/* #endregion */
-
-/* #region Desktop Styles */
-
-@media screen and (min-width: 1440px) {
-  #kawahvillas-blog-posts .content {
-    min-height: 60vmin;
-  }
-}
-
-/* #endregion */
-
-/* #region Large Desktop Styles */
-
-@media screen and (min-width: 1680px) {
-  #kawahvillas-blog-posts .content {
-    min-height: 45vmin;
-  }
-}
-
-/* #endregion */
-
-/* #region Extra Desktop Styles */
-
-@media screen and (min-width: 1920px) {
-  #kawahvillas-blog-posts .content {
-    min-height: 30vmin;
-  }
-}
-
-/* #endregion */
-
-/* #region Full Desktop Styles */
-
-@media screen and (min-width: 2240px) {
-  #kawahvillas-blog-posts .content {
-    min-height: 15vmin;
   }
 }
 

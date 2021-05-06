@@ -7,7 +7,6 @@
 #kawahvillas-villa-gallery .content {
   align-items: flex-start;
   justify-content: flex-end;
-  min-height: 150vmin;
   padding: 0 4em 4em 2em;
   background-repeat: no-repeat;
   background-position: 0%;
@@ -46,21 +45,6 @@
   padding: 2em 2em 4em 2em;
   margin: 4em 0;
   border: 1px solid var(--primary);
-}
-
-#kawahvillas-villa-calendar .dhx_calendar {
-  height: 75vmin;
-  width: 100% !important;
-  margin: 2em auto;
-}
-
-#kawahvillas-villa-calendar .dhx_calendar__days {
-  height: 50vmin;
-}
-
-#kawahvillas-villa-calendar .dhx_calendar__days .dhx_calendar-day::after, 
-#kawahvillas-villa-calendar .dhx_calendar__days .dhx_calendar-day::before {
-  top: 50%;
 }
 
 #kawahvillas-villa-tabs {
@@ -130,71 +114,9 @@
 
 /* #endregion */
 
-/* #region Large Mobile Styles */
-
-@media screen and (min-width: 460px) {
-  #kawahvillas-villa-gallery .content {
-    min-height: 135vmin;
-  }
-
-  #kawahvillas-villa-calendar .dhx_calendar {
-    width: 90% !important;
-  }
-
-  #kawahvillas-villa-calendar .dhx_calendar__days .dhx_calendar-day::after, 
-  #kawahvillas-villa-calendar .dhx_calendar__days .dhx_calendar-day::before {
-    top: 37.5%;
-  }
-}
-
-/* #endregion */
-
-/* #region Tablet Styles */
-
-@media screen and (min-width: 620px) {
-  #kawahvillas-villa-gallery .content {
-    min-height: 120vmin;
-  }
-
-  #kawahvillas-villa-calendar .dhx_calendar {
-    width: 80% !important;
-  }
-
-  #kawahvillas-villa-calendar .dhx_calendar__days .dhx_calendar-day::after, 
-  #kawahvillas-villa-calendar .dhx_calendar__days .dhx_calendar-day::before {
-    top: 25%;
-  }
-}
-
-/* #endregion */
-
-/* #region Large Tablet Styles */
-
-@media screen and (min-width: 840px) {
-  #kawahvillas-villa-gallery .content {
-    min-height: 105vmin;
-  }
-
-  #kawahvillas-villa-calendar .dhx_calendar {
-    width: 80% !important;
-  }
-
-  #kawahvillas-villa-calendar .dhx_calendar__days .dhx_calendar-day::after, 
-  #kawahvillas-villa-calendar .dhx_calendar__days .dhx_calendar-day::before {
-    top: 20%;
-  }
-}
-
-/* #endregion */
-
-/* #region Mini Laptop Styles */
+/* #region Laptop Styles */
 
 @media screen and (min-width: 1024px) {
-  #kawahvillas-villa-gallery .content {
-    grid-column: 13 / span 156;
-    min-height: 90vmin;
-  }
-
   #kawahvillas-villa-description {
     grid-column: 13 / span 72;
   }
@@ -206,11 +128,7 @@
   #kawahvillas-villa-booking .flex {
     margin: 0;
   }
-
-  #kawahvillas-villa-calendar .dhx_calendar {
-    width: 70% !important;
-  }
-
+  
   #kawahvillas-villa-tabs {
     grid-column: 13 / span 72;
   }
@@ -243,56 +161,6 @@
   #kawahvillas-villa-location {
     grid-column: 13 / span 72;
     min-height: 100vh;
-  }
-}
-
-/* #endregion */
-
-/* #region Laptop Styles */
-
-@media screen and (min-width: 1200px) {
-  #kawahvillas-villa-gallery .content {
-    min-height: 75vmin;
-  }
-}
-
-/* #endregion */
-
-/* #region Desktop Styles */
-
-@media screen and (min-width: 1200px) {
-  #kawahvillas-villa-gallery .content {
-    min-height: 60vmin;
-  }
-}
-
-/* #endregion */
-
-/* #region Large Desktop Styles */
-
-@media screen and (min-width: 1680px) {
-  #kawahvillas-villa-gallery .content {
-    min-height: 45vmin;
-  }
-}
-
-/* #endregion */
-
-/* #region Extra Desktop Styles */
-
-@media screen and (min-width: 1920px) {
-  #kawahvillas-villa-gallery .content {
-    min-height: 30vmin;
-  }
-}
-
-/* #endregion */
-
-/* #region Full Desktop Styles */
-
-@media screen and (min-width: 2240px) {
-  #kawahvillas-villa-gallery .content {
-    min-height: 15vmin;
   }
 }
 

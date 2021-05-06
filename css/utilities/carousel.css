@@ -1,5 +1,8 @@
 .carousel {
   position: relative;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .carousel-prev,
@@ -40,14 +43,14 @@
 
 @media screen and (min-width: 980px) {
   .carousel-prev {
-      left: 5em;
+    left: 5em;
   }
 
   .carousel-next {
-      right: 5em;
+    right: 5em;
   }
 
   .carousel-list {
-      margin: 0 10em;
+    margin: 0 10em;
   }
 }

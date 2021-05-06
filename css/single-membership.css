@@ -1,14 +1,13 @@
 /* #region Mobile Styles */
 
-#banner {
+#kawahvillas-banner {
   background-color: var(--support);
 }
 
-#banner .content {
+#kawahvillas-banner .content {
   grid-column: 2 / span 10;
   align-items: stretch;
   justify-content: flex-end;
-  min-height: 150vmin;
   padding: 0 4em 4em 2em;
   box-shadow: inset 0 -20em 10em -10em var(--secondary);
   background-image: url("../img/img_2.jpg");
@@ -200,51 +199,19 @@
 
 /* #endregion */
 
-/* #region Large Mobile Styles */
-
-@media screen and (min-width: 460px) {
-  #banner .content {
-    min-height: 135vmin;
-  }
-}
-
-/* #endregion */
-
-/* #region Tablet Styles */
-
-@media screen and (min-width: 620px) {
-  #banner .content {
-    min-height: 120vmin;
-  }
-}
-
-/* #endregion */
-
-/* #region Large Tablet Styles */
-
-@media screen and (min-width: 800px) {
-  #banner .content {
-    min-height: 105vmin;
-  }
-}
-
-/* #endregion */
-
-/* #region Mini Laptop Styles */
+/* #region Laptop Styles */
 
 @media screen and (min-width: 1024px) {
-  #banner .content {
+  #kawahvillas-banner .content {
     grid-column: 13 / span 156;
     align-items: center;
     justify-content: center;
-    min-height: 90vmin;
     padding: 0;
     box-shadow: none;
   }
   
   #kawahvillas-access .image-with-text {
     grid-area: 1 / 25 / span 3 / span 62;
-    min-height: 100%;
   }
   
   #kawahvillas-access .line-border {
@@ -284,12 +251,10 @@
 
   #kawahvillas-trip .image-with-text {
     grid-area: 1 / 95 / span 3 / span 62;
-    min-height: 100%;
   }
 
   #kawahvillas-guest .image-with-text {
     grid-area: 1 / 25 / span 3 / span 62;
-    min-height: 100%;
   }
   
   #kawahvillas-guest .line-border {
@@ -329,7 +294,6 @@
 
   #kawahvillas-nocontract .image-with-text {
     grid-area: 1 / 95 / span 3 / span 62;
-    min-height: 100%;
   }
 
   #kawahvillas-subscription .content {
@@ -351,56 +315,6 @@
 
   #kawahvillas-live .content {
     grid-column: 13 / span 156;
-  }
-}
-
-/* #endregion */
-
-/* #region Laptop Styles */
-
-@media screen and (min-width: 1200px) {
-  #banner .content { 
-    min-height: 75vmin;
-  }
-}
-
-/* #endregion */
-
-/* #region Desktop Styles */
-
-@media screen and (min-width: 1440px) {
-  #banner .content { 
-    min-height: 60vmin;
-  }
-}
-
-/* #endregion */
-
-/* #region Large Desktop Styles */
-
-@media screen and (min-width: 1680px) {
-  #banner .content { 
-    min-height: 45vmin;
-  }
-}
-
-/* #endregion */
-
-/* #region Extra Desktop Styles */
-
-@media screen and (min-width: 1920px) {
-  #banner .content { 
-    min-height: 30vmin;
-  }
-}
-
-/* #endregion */
-
-/* #region Full Desktop Styles */
-
-@media screen and (min-width: 2240px) {
-  #banner .content {
-    min-height: 15vmin;
   }
 }
 
