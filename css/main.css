@@ -242,10 +242,6 @@ label, a, span {
   height: 120vmin;
 }
 
-.content-with-card-text {
-  height: 120vmin;
-}
-
 .content-with-card-image {
   height: 105vmin;
 }
@@ -371,10 +367,6 @@ footer {
   .content-with-background {
     height: 135vmin;
   }
-
-  .content-with-card-text {
-    height: 105vmin;
-  }
 }
 
 /* #endregion */
@@ -413,10 +405,6 @@ footer {
   }
 
   .content-with-image {
-    height: 90vmin;
-  }
-
-  .content-with-card-text {
     height: 90vmin;
   }
 
@@ -516,10 +504,6 @@ footer {
   .content-with-background {
     height: 75vmin;
   }
-
-  .content-with-card-text {
-    height: 75vmin;
-  }
 }
 
 /* #endregion */
@@ -534,10 +518,6 @@ footer {
   .content-with-background {
     height: 60vmin;
   }
-
-  .content-with-card-text {
-    height: 60vmin;
-  }
 }
 
 /* #endregion */
@@ -550,10 +530,6 @@ footer {
   }
 
   .content-with-background {
-    height: 45vmin;
-  }
-
-  .content-with-card-text {
     height: 45vmin;
   }
 }

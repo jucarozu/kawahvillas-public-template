@@ -39,6 +39,7 @@
 #kawahvillas-search-villas .content {
   grid-column: 2 / span 10;
   padding: 1em 2em;
+  margin: 0 0 4em 0;
   border: 1px solid var(--secondary);
   background-color: var(--support);
 }
