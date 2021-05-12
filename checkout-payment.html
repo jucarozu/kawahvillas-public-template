@@ -1,0 +1,168 @@
+<!--#include file="checkout-header.html" -->
+
+<link rel="stylesheet" href="css/checkout-payment.css">
+
+<main>
+  <section id="kawahvillas-payment-return">
+    <div class="grid">
+      <a href="index.html" class="text-secondary link grid-item">
+        <i class="fas fa-arrow-left text-primary"></i> &nbsp;Return to homepage
+      </a>
+    </div>
+  </section>
+
+  <section id="kawahvillas-payment-header">
+    <div class="grid">
+      <div class="content-steps grid-item flex flex-row">
+        <i class="fas fa-ticket-alt text-primary"></i>
+        <i class="fas fa-dollar-sign text-primary"></i>
+        <i class="fas fa-check text-secondary"></i>
+      </div>
+      <div class="content-title grid-item flex flex-column">
+        <h2 class="text-primary flex-item">Payment</h2>
+      </div>
+    </div>
+  </section>
+
+  <section id="kawahvillas-payment-body">
+    <div class="grid">
+      <form id="kawahvillas-payment-form">
+        <div class="grid">
+          <input type="number" class="payment-card-number grid-item" name="payment-card-number" value="" placeholder="Card Number" />
+          <input type="number" class="payment-card-month grid-item" name="payment-card-month" value="" placeholder="MM" />
+          <input type="number" class="payment-card-year grid-item" name="payment-card-year" value="" placeholder="YYYY" />
+          <input type="number" class="payment-card-cvv grid-item" name="payment-card-cvv" value="" placeholder="CVV" />
+          <input type="text" class="payment-card-name grid-item" name="payment-card-name" value="" placeholder="Cardholder Name" />
+          <input type="submit" class="button button-primary-negative grid-item" value="Purchase Membership">
+        </div>
+      </form>
+
+      <article id="kawahvillas-payment-detail">
+        <div class="grid">
+          <div id="payment-membership-1" class="payment-membership grid-item flex flex-column">
+            <div class="content-title flex-item flex flex-column">
+              <h2 class="text-secondary">Payment Detail</h2>
+            </div>
+
+            <div class="payment-membership-header flex-item flex flex-column">
+              <h3 class="payment-membership-title text-secondary text-bold flex-item">
+                Single Membership
+              </h3>
+              <div class="payment-membership-price flex-item flex flex-row">
+                <h4 class="text-primary">$90</h4><span> /month</span>
+              </div>
+            </div>
+            <ul class="fa-ul flex-item flex flex-column">
+              <li class="text-secondary flex-item">
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                One active trip <span class="text-bold">at a time</span>
+              </li>
+              <li class="text-secondary flex-item">
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                5 days and 4 nights stays
+              </li>
+              <li class="text-secondary flex-item">
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                Invite a guest to share the experience
+              </li>
+              <li class="text-secondary flex-item">
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                Exclusive access to our destinations
+              </li>
+              <li class="text-secondary flex-item">
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                No contract needed, cancel at any time
+              </li>
+            </ul>
+          </div>
+
+          <div id="payment-membership-2" class="payment-membership grid-item flex flex-column" style="display: none;">
+            <div class="payment-membership-header flex-item flex flex-column">
+              <h3 class="payment-membership-title flex-item">
+                <input class="payment-membership-radio" type="radio" id="payment-membership-2" name="payment-membership">
+                <label class="payment-membership-label text-secondary text-bold" for="payment-membership-2">
+                  Duo Membership
+                </label>
+              </h3>
+              <div class="payment-membership-price flex-item flex flex-row">
+                <h4 class="text-primary">$150</h4><span> /month</span>
+              </div>
+            </div>
+            <ul class="fa-ul flex-item flex flex-column">
+              <li class="text-secondary flex-item">
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                One active trip at a time <span class="text-bold">for two people</span>
+              </li>
+              <li class="text-secondary flex-item">
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                5 days and 4 nights stays (Extensions Available)
+              </li>
+              <li class="text-secondary flex-item">
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                Invite a guest to share the experience
+              </li>
+              <li class="text-secondary flex-item">
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                Exclusive access to our destinations
+              </li>
+              <li class="text-secondary flex-item">
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                No contract needed, cancel at any time
+              </li>
+            </ul>
+          </div>
+
+          <div id="payment-membership-3" class="payment-membership grid-item flex flex-column" style="display: none;">
+            <div class="payment-membership-header flex-item flex flex-column">
+              <h3 class="payment-membership-title flex-item">
+                <input class="payment-membership-radio" type="radio" id="payment-membership-3" name="payment-membership">
+                <label class="payment-membership-label text-secondary text-bold" for="payment-membership-3">
+                  Group Membership
+                </label>
+              </h3>
+              <div class="payment-membership-price flex-item flex flex-row">
+                <h4 class="text-primary">$450</h4><span> /month</span>
+              </div>
+            </div>
+            <ul class="fa-ul flex-item flex flex-column">
+              <li class="text-secondary flex-item">
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                Travel with <span class="text-bold">your family members and/or friends</span>
+              </li>
+              <li class="text-secondary flex-item">
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                5 days and 4 nights stays (Extensions available)
+              </li>
+              <li class="text-secondary flex-item">
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                Includes two active trips at a time
+              </li>
+              <li class="text-secondary flex-item">
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                Exclusive access to our destinations with reservation priority
+              </li>
+              <li class="text-secondary flex-item">
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                No contract needed, cancel at any time
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="kawahvillas-payment-processing" class="section-spacing" style="display: none;">
+    <div class="grid">
+      <div class="content grid-item flex flex-column">
+        <i class="fas fa-spinner text-primary text-bold"></i>
+        <h2 class="text-secondary flex-item">PROCESSING</h2>
+        <p class="text-secondary flex-item">
+          Wait some minutes while we process your payment
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!--#include file="checkout-footer.html" -->

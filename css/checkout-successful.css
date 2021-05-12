@@ -1,0 +1,45 @@
+/* #region Mobile Styles */
+
+#kawahvillas-successful-message {
+  background-color: var(--support);
+}
+
+#kawahvillas-successful-message .content {
+  grid-column: 3 / span 8;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#kawahvillas-successful-message .content i {
+  font-size: 5em;
+}
+
+#kawahvillas-successful-message .content h2 {
+  padding: 1em 0;
+  font-size: 1.4em;
+}
+
+#kawahvillas-successful-message .content h3 {
+  padding: 1em 0;
+}
+
+#kawahvillas-successful-message .content p {
+  padding: 1em 0;
+}
+
+#kawahvillas-successful-message .content a {
+  margin: 1em 0;
+}
+
+/* #endregion */
+
+/* #region Laptop Styles */
+
+@media screen and (min-width: 1024px) {
+  #kawahvillas-successful-message .content {
+    grid-column: 49 / span 84;
+  }
+}
+
+/* #endregion */

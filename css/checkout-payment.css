@@ -1,0 +1,269 @@
+/* #region Mobile Styles */
+
+#kawahvillas-payment-return .grid {
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+#kawahvillas-payment-return a {
+  grid-column: 2 / span 10;
+}
+
+#kawahvillas-payment-header {
+  background-color: var(--support);
+}
+
+#kawahvillas-payment-header .content-steps {
+  grid-column: 2 / span 10;
+}
+
+#kawahvillas-payment-header .content-steps i {
+  font-size: 2em;
+  padding: 0 1em 0 0;
+}
+
+#kawahvillas-payment-header .content-steps i.text-secondary {
+  opacity: 0.5;
+}
+
+#kawahvillas-payment-header .content-title {
+  grid-column: 2 / span 10;
+}
+
+#kawahvillas-payment-header .content-title h3 {
+  font-size: 1.4em;
+}
+
+#kawahvillas-payment-form {
+  grid-column: 2 / span 10;
+}
+
+#kawahvillas-payment-form input {
+  padding: 1em;
+  margin-bottom: 1em;
+  border: 1px solid var(--primary);
+}
+
+#kawahvillas-payment-form .payment-card-number {
+  grid-column: 1 / span 12;
+  grid-row: 1 / 2;
+}
+
+#kawahvillas-payment-form .payment-card-month {
+  grid-column: 1 / span 3;
+  grid-row: 2 / 3;
+}
+
+#kawahvillas-payment-form .payment-card-year {
+  grid-column: 5 / span 3;
+  grid-row: 2 / 3;
+}
+
+#kawahvillas-payment-form .payment-card-cvv {
+  grid-column: 9 / span 4;
+  grid-row: 2 / 3;
+}
+
+#kawahvillas-payment-form .payment-card-name {
+  grid-column: 1 / span 12;
+  grid-row: 3 / 4;
+}
+
+#kawahvillas-payment-form .button {
+  grid-column: 1 / span 12;
+  grid-row: 4 / 5;
+  padding: 1em;
+  margin: 1em 0;
+  border: 2px solid var(--primary);
+}
+
+#kawahvillas-payment-detail {
+  grid-column: 2 / span 10;
+  grid-template-rows: auto;
+  margin-top: 4em;
+}
+
+#kawahvillas-payment-detail .payment-membership {
+  padding: 1em;
+  border: 1px solid var(--secondary);
+  background-color: var(--support);
+}
+
+#kawahvillas-payment-detail .payment-membership .content-title {
+  grid-column: 1 / span 12;
+  grid-row: 1 / 2;
+  padding-left: 1rem;
+}
+
+#kawahvillas-payment-detail .payment-membership h3 {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+#kawahvillas-payment-detail .payment-membership .payment-membership-title {
+  cursor: pointer;
+  padding-left: 1rem;
+}
+
+#kawahvillas-payment-detail .payment-membership .payment-membership-price {
+  align-items: flex-end;
+  padding-left: 1rem;
+}
+
+#kawahvillas-payment-detail .payment-membership h4 {
+  font-size: 3em;
+  font-weight: 300;
+}
+
+#kawahvillas-payment-detail .payment-membership span {
+  font-size: 1em;
+  padding-bottom: 0.2em;
+}
+
+#kawahvillas-payment-detail .payment-membership ul {
+  max-height: 150vmin;
+  padding-left: 0.5rem;
+}
+
+#kawahvillas-payment-detail .payment-membership ul li {
+  line-height: 1em;
+  text-align: left;
+}
+
+#kawahvillas-payment-detail .payment-membership ul li .fa-check {
+  color: var(--primary);
+}
+
+#kawahvillas-payment-detail #payment-membership-1 {
+  grid-column: 1 / span 12;
+  grid-row: 2 / 3;
+}
+
+#kawahvillas-payment-detail #payment-membership-2 {
+  grid-column: 1 / span 12;
+  grid-row: 2 / 3;
+}
+
+#kawahvillas-payment-detail #payment-membership-3 {
+  grid-column: 1 / span 12;
+  grid-row: 2 / 3;
+}
+
+#kawahvillas-payment-processing .content {
+  grid-column: 3 / span 8;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#kawahvillas-payment-processing .content i {
+  font-size: 5em;
+}
+
+#kawahvillas-payment-footer {
+  background-color: var(--support);
+  margin: 4em;
+}
+
+#kawahvillas-payment-footer button {
+  grid-column: 2 / span 10;
+  margin: 0 auto;
+}
+
+/* #endregion */
+
+/* #region Laptop Styles */
+
+@media screen and (min-width: 1024px) {
+  #kawahvillas-payment-return a {
+    grid-column: 13 / span 180;
+  }
+
+  #kawahvillas-payment-header .content-title {
+    grid-column: 13 / span 76;
+    grid-row: 1 / 2;
+  }
+  
+  #kawahvillas-payment-header .content-steps {
+    grid-column: 91 / span 76;
+    grid-row: 1 / 2;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  #kawahvillas-payment-header .content-steps i {
+    font-size: 2em;
+    padding: 0 0 0 2em;
+  }
+
+  #kawahvillas-payment-form {
+    grid-column: 13 / span 72;
+  }
+  
+  #kawahvillas-payment-form .payment-card-number {
+    grid-column: 1 / span 180;
+    grid-row: 1 / 2;
+  }
+  
+  #kawahvillas-payment-form .payment-card-month {
+    grid-column: 1 / span 56;
+    grid-row: 2 / 3;
+  }
+  
+  #kawahvillas-payment-form .payment-card-year {
+    grid-column: 63 / span 56;
+    grid-row: 2 / 3;
+  }
+  
+  #kawahvillas-payment-form .payment-card-cvv {
+    grid-column: 125 / span 56;
+    grid-row: 2 / 3;
+  }
+  
+  #kawahvillas-payment-form .payment-card-name {
+    grid-column: 1 / span 180;
+    grid-row: 3 / 4;
+  }
+  
+  #kawahvillas-payment-form .button {
+    grid-column: 91 / span 90;
+    grid-row: 4 / 5;
+  }
+
+  #kawahvillas-payment-detail {
+    grid-column: 97 / span 72;
+    margin-top: 0;
+  }
+
+  #kawahvillas-payment-detail .content-title {
+    grid-column: 1 / span 180;
+    grid-row: 1 / 2;
+  }
+
+  #kawahvillas-payment-detail .payment-membership .payment-membership-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #kawahvillas-payment-detail #payment-membership-1 {
+    grid-column: 1 / span 180;
+    grid-row: 2 / 3;
+  }
+  
+  #kawahvillas-payment-detail #payment-membership-2 {
+    grid-column: 1 / span 180;
+    grid-row: 2 / 3;
+  }
+  
+  #kawahvillas-payment-detail #payment-membership-3 {
+    grid-column: 1 / span 180;
+    grid-row: 2 / 3;
+  }
+
+  #kawahvillas-payment-processing .content {
+    grid-column: 49 / span 84;
+  }
+}
+
+/* #endregion */

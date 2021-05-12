@@ -1,0 +1,169 @@
+/* #region Mobile Styles */
+
+#kawahvillas-cart-return .grid {
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+#kawahvillas-cart-return a {
+  grid-column: 2 / span 10;
+}
+
+#kawahvillas-cart-header {
+  background-color: var(--support);
+}
+
+#kawahvillas-cart-header .content-steps {
+  grid-column: 2 / span 10;
+}
+
+#kawahvillas-cart-header .content-steps i {
+  font-size: 2em;
+  padding: 0 1em 0 0;
+}
+
+#kawahvillas-cart-header .content-steps i.text-secondary {
+  opacity: 0.5;
+}
+
+#kawahvillas-cart-header .content-title {
+  grid-column: 2 / span 10;
+}
+
+#kawahvillas-cart-header .content-title h3 {
+  font-size: 1.4em;
+}
+
+#kawahvillas-cart-memberships {
+  grid-template-rows: auto;
+  margin-top: 4em;
+}
+
+#kawahvillas-cart-memberships .cart-membership {
+  border-top: 1px solid var(--secondary);
+  background-color: var(--support);
+}
+
+#kawahvillas-cart-memberships .cart-membership h3 {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+#kawahvillas-cart-memberships .cart-membership .cart-membership-radio {
+  height: 0.75em;
+  width: 0.75em;
+}
+
+#kawahvillas-cart-memberships .cart-membership .cart-membership-label {
+  padding-left: 0.5em;
+  cursor: pointer;
+}
+
+#kawahvillas-cart-memberships .cart-membership .cart-membership-price {
+  align-items: flex-end;
+  padding-left: 2.5em;
+}
+
+#kawahvillas-cart-memberships .cart-membership h4 {
+  font-size: 3em;
+  font-weight: 300;
+}
+
+#kawahvillas-cart-memberships .cart-membership span {
+  font-size: 1em;
+  padding-bottom: 0.2em;
+}
+
+#kawahvillas-cart-memberships .cart-membership ul {
+  max-height: 150vmin;
+  padding-left: 2em;
+}
+
+#kawahvillas-cart-memberships .cart-membership ul li {
+  line-height: 1em;
+  text-align: left;
+}
+
+#kawahvillas-cart-memberships .cart-membership ul li .fa-check {
+  color: var(--primary);
+}
+
+#kawahvillas-cart-memberships .cart-membership a {
+  margin: auto auto 0 auto;
+}
+
+#kawahvillas-cart-memberships #cart-membership-1 {
+  grid-column: 2 / span 10;
+  grid-row: 1 / 2;
+}
+
+#kawahvillas-cart-memberships #cart-membership-2 {
+  grid-column: 2 / span 10;
+  grid-row: 2 / 3;
+}
+
+#kawahvillas-cart-memberships #cart-membership-3 {
+  grid-column: 2 / span 10;
+  grid-row: 3 / 4;
+}
+
+#kawahvillas-cart-footer {
+  background-color: var(--support);
+  margin: 4em;
+}
+
+#kawahvillas-cart-footer button {
+  grid-column: 2 / span 10;
+  margin: 0 auto;
+}
+
+/* #endregion */
+
+/* #region Laptop Styles */
+
+@media screen and (min-width: 1024px) {
+  #kawahvillas-cart-return a {
+    grid-column: 13 / span 180;
+  }
+  
+  #kawahvillas-cart-header .content-title {
+    grid-column: 13 / span 76;
+    grid-row: 1 / 2;
+  }
+  
+  #kawahvillas-cart-header .content-steps {
+    grid-column: 91 / span 76;
+    grid-row: 1 / 2;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  #kawahvillas-cart-header .content-steps i {
+    font-size: 2em;
+    padding: 0 0 0 2em;
+  }
+
+  #kawahvillas-cart-memberships .cart-membership .cart-membership-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #kawahvillas-cart-memberships #cart-membership-1 {
+    grid-column: 13 / span 156;
+  }
+  
+  #kawahvillas-cart-memberships #cart-membership-2 {
+    grid-column: 13 / span 156;
+  }
+  
+  #kawahvillas-cart-memberships #cart-membership-3 {
+    grid-column: 13 / span 156;
+  }
+  
+  #kawahvillas-cart-footer button {
+    grid-column: 13 / span 156;
+  }
+}
+
+/* #endregion */

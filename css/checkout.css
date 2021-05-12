@@ -1,0 +1,46 @@
+/* #region Mobile Styles */
+
+#kawahvillas-checkout-logo {
+  background-color: var(--support);
+  margin: 2em 0;
+}
+
+#kawahvillas-checkout-logo .grid {
+  justify-content: center;
+  height: auto;
+}
+
+#kawahvillas-checkout-logo .logo {
+  grid-column: 4 / span 6;
+}
+
+#kawahvillas-checkout-footer {
+  background-color: var(--support);
+  margin: 10em 0 2em 0;
+}
+
+#kawahvillas-checkout-footer .grid {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#kawahvillas-checkout-footer span {
+  grid-column: 2 / span 10;
+}
+
+/* #endregion */
+
+/* #region Laptop Styles */
+
+@media screen and (min-width: 1024px) {
+  #kawahvillas-checkout-logo .logo {
+    grid-column: 79 / span 24;
+  }
+  
+  #kawahvillas-checkout-footer span {
+    grid-column: 13 / span 156;
+  }
+}
+
+/* #endregion */
