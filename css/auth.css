@@ -134,13 +134,9 @@
   #kawahvillas-auth-sign-in-slogan,
   #kawahvillas-auth-sign-up-slogan,
   #kawahvillas-auth-footer {
+    display: flex;
     background-color: var(--secondary);
     padding: 1em 10em;
-  }
-
-  #kawahvillas-auth-sign-in-slogan,
-  #kawahvillas-auth-footer {
-    display: flex;
   }
 
   #kawahvillas-auth-return {
